@@ -1,0 +1,68 @@
+import { theme } from "./theme";
+
+export const blends = {
+  skinBoost: {
+    name: "Skin Boost",
+    tagline: "Beauty from Within",
+    ingredients: [
+      { videoFile: "oranges.mp4", label: "Orange" },
+      { videoFile: "limes.mp4", label: "Lime" },
+      { videoFile: "carrot.mp4", label: "Carrot" },
+      { videoFile: "apples.mp4", label: "Apple" },
+    ],
+    ingredientsText: "Orange · Lime · Carrot · Apple",
+    benefit: "Beta-carotene rich. Supports healthy, glowing skin.",
+    accentColor: theme.juiceColors.skinBoost,
+    bottleImage: "skin-boost-bottle.png",
+    bottleVideo: "skin-boost-bottle.mp4",
+    bottleVideoTrim: 1,
+  },
+  detox: {
+    name: "Detox",
+    tagline: "Clean & Refresh",
+    ingredients: [
+      { videoFile: "celery.mp4", label: "Celery" },
+      { videoFile: "limes.mp4", label: "Lime" },
+      { videoFile: "cucumbers.mp4", label: "Cucumber" },
+      { videoFile: "apples.mp4", label: "Apple" },
+    ],
+    ingredientsText: "Celery · Lime · Cucumber · Apple",
+    benefit: "Hydration and gentle cleansing.",
+    accentColor: theme.juiceColors.detox,
+    bottleImage: "detox-bottle-transparent.png",
+    bottleVideo: "detox-bottle.mp4",
+    bottleVideoTrim: 1,
+  },
+  immunityBoost: {
+    name: "Immunity Boost",
+    tagline: "Natural Defence",
+    ingredients: [
+      { videoFile: "ginger.mp4", label: "Ginger" },
+      { videoFile: "limes.mp4", label: "Lime" },
+      { videoFile: "oranges.mp4", label: "Orange" },
+      { videoFile: "carrot.mp4", label: "Carrot" },
+    ],
+    ingredientsText: "Ginger · Lime · Orange · Carrot",
+    benefit: "Punchy ginger-citrus kick. Natural immune support.",
+    accentColor: theme.juiceColors.immunityBoost,
+    bottleImage: "immunity-boost-bottle.png",
+    bottleVideo: "immunity-boost-bottle.mp4",
+    bottleVideoTrim: 1,
+  },
+  liverKidney: {
+    name: "Liver & Kidney",
+    tagline: "Deep Cleanse",
+    ingredients: [
+      { videoFile: "beetroot.mp4", label: "Beetroot" },
+      { videoFile: "ginger.mp4", label: "Ginger" },
+      { videoFile: "carrot.mp4", label: "Carrot" },
+      { videoFile: "apples.mp4", label: "Apple" },
+    ],
+    ingredientsText: "Beetroot · Ginger · Carrot · Apple",
+    benefit: "Supports liver & kidney function. Helps lower blood pressure.",
+    accentColor: theme.juiceColors.liverKidney,
+    bottleImage: "liver-kidney-bottle.png",
+    bottleVideo: "liver-kidney-bottle.mp4",
+    bottleVideoTrim: 1,
+  },
+} as const;

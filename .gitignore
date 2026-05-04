@@ -1,0 +1,53 @@
+# Claude Code & agent tooling (local-only)
+.claude/
+.superpowers/
+.agents/
+skills-lock.json
+
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build output
+out/
+dist/
+build/
+*/out/
+*/dist/
+*/build/
+
+# Large media (track via Git LFS or external storage instead)
+videos/
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vita Press — Oval Bottle Labels (Print Ready)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 10mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color-adjust: exact !important;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #e8e8e8;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 24px;
+      padding: 24px;
+    }
+
+    @media print {
+      body {
+        background: white;
+        gap: 0;
+        padding: 0;
+        display: block;
+      }
+    }
+
+    .print-instructions {
+      width: 100%;
+      text-align: center;
+      font-size: 11px;
+      color: #999;
+      padding: 10px 20px;
+      margin-bottom: 10px;
+    }
+
+    @media print {
+      .print-instructions { display: none; }
+    }
+
+    /* ---- Oval label ---- */
+    .label {
+      /* Vistaprint: 7.6 x 5 cm, portrait (tall) */
+      width: 50mm;
+      height: 76mm;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      border: 0.3mm solid rgba(0, 0, 0, 0.08);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 8mm 4mm 6mm;
+      page-break-inside: avoid;
+    }
+
+    @media print {
+      .label {
+        background: transparent;
+        border: 0.25pt solid rgba(0, 0, 0, 0.06);
+        page-break-after: always;
+        margin: auto;
+      }
+    }
+
+    /* Top accent arc */
+    .label::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 10%;
+      right: 10%;
+      height: 2mm;
+      background: var(--accent);
+      border-radius: 0 0 50% 50%;
+    }
+
+    /* Bottom accent arc */
+    .label::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      right: 10%;
+      height: 1.5mm;
+      background: var(--accent);
+      border-radius: 50% 50% 0 0;
+    }
+
+    /* Wordmark */
+    .wordmark {
+      font-family: 'Instrument Serif', serif;
+      font-size: 7.5pt;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #1A1815;
+      text-align: center;
+      margin-bottom: 0.5mm;
+    }
+
+    .wordmark-line {
+      width: 10mm;
+      height: 0.25mm;
+      background: var(--accent);
+      margin: 0 auto 2mm;
+      opacity: 0.6;
+    }
+
+    /* Blend name */
+    .blend-name {
+      font-family: 'Instrument Serif', serif;
+      font-size: 18pt;
+      font-weight: 600;
+      line-height: 1.0;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 1.5mm;
+    }
+
+    /* Subtitle / angle */
+    .blend-angle {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 5.5pt;
+      color: #6a6560;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 2mm;
+    }
+
+    /* Ingredients */
+    .ingredients-dots {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 6.5pt;
+      color: #3a3530;
+      text-align: center;
+      line-height: 1.5;
+      margin-bottom: 2mm;
+    }
+
+    /* Thin separator */
+    .sep {
+      width: 60%;
+      height: 0.2mm;
+      background: var(--accent);
+      opacity: 0.35;
+      margin: 0 auto 1.5mm;
+    }
+
+    /* Legal block */
+    .legal {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 4.5pt;
+      line-height: 1.5;
+      color: #5B5550;
+      text-align: center;
+    }
+
+    /* Blend-specific accents */
+    .label.skin-boost      { --accent: #E8860A; }
+    .label.detox            { --accent: #4A8C3F; }
+    .label.immunity-boost   { --accent: #D4900A; }
+    .label.liver-kidney     { --accent: #8B1A4A; }
+
+    /* Checkerboard background to visualise transparency */
+    .transparency-bg {
+      background-image:
+        linear-gradient(45deg, #d0d0d0 25%, transparent 25%),
+        linear-gradient(-45deg, #d0d0d0 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #d0d0d0 75%),
+        linear-gradient(-45deg, transparent 75%, #d0d0d0 75%);
+      background-size: 4mm 4mm;
+      background-position: 0 0, 0 2mm, 2mm -2mm, -2mm 0;
+      border-radius: 50%;
+    }
+
+    @media print {
+      .transparency-bg {
+        background-image: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-instructions">
+    <strong>Vita Press — Oval Labels for Vistaprint</strong><br>
+    Oval 7.6 &times; 5 cm (portrait) &bull; Transparent Plastic &bull; 50 qty<br>
+    Export as PDF at 100% scale. Upload to Vistaprint as your design.<br>
+    Checkerboard pattern shows transparent areas (won't print).
+  </div>
+
+  <!-- SKIN BOOST -->
+  <div class="label skin-boost transparency-bg">
+    <div class="wordmark">Vita Press</div>
+    <div class="wordmark-line"></div>
+    <div class="blend-name">Skin<br>Boost</div>
+    <div class="blend-angle">Beauty &amp; Glow</div>
+    <div class="ingredients-dots">orange · apple<br>carrot · lime</div>
+    <div class="sep"></div>
+    <div class="legal">
+      330ml · Keep refrigerated<br>
+      Drink within 3 days<br>
+      <br>
+      No known allergens.<br>
+      Made in an environment where<br>
+      all 14 known allergens<br>
+      may be present.
+    </div>
+  </div>
+
+  <!-- DETOX -->
+  <div class="label detox transparency-bg">
+    <div class="wordmark">Vita Press</div>
+    <div class="wordmark-line"></div>
+    <div class="blend-name">Detox</div>
+    <div class="blend-angle">Clean &amp; Refresh</div>
+    <div class="ingredients-dots">celery · apple<br>cucumber · lime</div>
+    <div class="sep"></div>
+    <div class="legal">
+      330ml · Keep refrigerated<br>
+      Drink within 3 days<br>
+      <br>
+      No known allergens.<br>
+      Made in an environment where<br>
+      all 14 known allergens<br>
+      may be present.
+    </div>
+  </div>
+
+  <!-- IMMUNITY BOOST -->
+  <div class="label immunity-boost transparency-bg">
+    <div class="wordmark">Vita Press</div>
+    <div class="wordmark-line"></div>
+    <div class="blend-name">Immunity<br>Boost</div>
+    <div class="blend-angle">Defence &amp; Vitality</div>
+    <div class="ingredients-dots">orange · carrot<br>lime · ginger</div>
+    <div class="sep"></div>
+    <div class="legal">
+      330ml · Keep refrigerated<br>
+      Drink within 3 days<br>
+      <br>
+      No known allergens.<br>
+      Made in an environment where<br>
+      all 14 known allergens<br>
+      may be present.
+    </div>
+  </div>
+
+  <!-- LIVER & KIDNEY -->
+  <div class="label liver-kidney transparency-bg">
+    <div class="wordmark">Vita Press</div>
+    <div class="wordmark-line"></div>
+    <div class="blend-name">Liver &amp;<br>Kidney</div>
+    <div class="blend-angle">Deep Cleanse</div>
+    <div class="ingredients-dots">beetroot · carrot<br>apple · ginger</div>
+    <div class="sep"></div>
+    <div class="legal">
+      330ml · Keep refrigerated<br>
+      Drink within 3 days<br>
+      <br>
+      No known allergens.<br>
+      Made in an environment where<br>
+      all 14 known allergens<br>
+      may be present.
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vita Press — Idea of the Day | IdeaBrowser</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf9f6;
+      --surface: #ffffff;
+      --border: #e8e5df;
+      --border-subtle: #f0ede8;
+      --text-primary: #1a1815;
+      --text-secondary: #6b6560;
+      --text-muted: #9e9891;
+      --accent: #d4700a;
+      --accent-light: #fff4e8;
+      --tag-bg: #f0ede8;
+      --score-bg: #f7f5f0;
+      --green: #006b3f;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text-primary); }
+    .page { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
+
+    /* Topbar */
+    .topbar { background:var(--surface); border-bottom:1px solid var(--border); padding:14px 24px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; }
+    .brand { font-size:13px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-secondary); }
+    .brand span { color:var(--accent); }
+    .pill-btn { font-family:'DM Sans',sans-serif; font-size:12px; font-weight:500; padding:6px 14px; border-radius:20px; border:1px solid var(--border); background:var(--surface); color:var(--text-secondary); cursor:pointer; }
+    .pill-btn.primary { background:var(--accent); color:#fff; border-color:var(--accent); }
+    .topbar-right { display:flex; gap:8px; }
+
+    /* Idea Header */
+    .idea-header { margin-bottom:36px; animation:fadeUp 0.5s ease both; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:20px; }
+    .tag { font-size:11px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; padding:4px 10px; border-radius:4px; background:var(--tag-bg); color:var(--text-secondary); }
+    .tag.accent { background:var(--accent-light); color:var(--accent); }
+    .idea-number { font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:12px; }
+    h1.idea-title { font-family:'Instrument Serif',serif; font-size:clamp(32px,5vw,48px); line-height:1.1; letter-spacing:-0.02em; margin-bottom:16px; }
+    .idea-tagline { font-size:18px; font-weight:300; line-height:1.5; color:var(--text-secondary); max-width:600px; }
+
+    /* Scorecard */
+    .score-card { background:var(--score-bg); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin-bottom:36px; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .score-label { font-size:10px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:6px; }
+    .score-value { font-family:'Instrument Serif',serif; font-size:28px; line-height:1; }
+    .score-value.green { color:var(--green); }
+    .score-value.amber { color:var(--accent); }
+    .score-bar-wrap { margin-top:6px; height:4px; background:var(--border); border-radius:2px; overflow:hidden; }
+    .score-bar { height:100%; border-radius:2px; background:var(--accent); }
+
+    /* Section */
+    .section { margin-bottom:40px; animation:fadeUp 0.5s 0.15s ease both; }
+    .section-label { font-size:10px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-muted); margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+    .section-label::after { content:''; flex:1; height:1px; background:var(--border-subtle); }
+    p { font-size:16px; line-height:1.75; }
+    p + p { margin-top:14px; }
+
+    /* Pull Quote */
+    .highlight-box { border-left:3px solid var(--accent); background:var(--accent-light); padding:16px 20px; border-radius:0 8px 8px 0; margin:20px 0; }
+    .highlight-box p { font-size:15px; font-weight:500; color:var(--accent); line-height:1.6; }
+
+    /* Steps */
+    .steps { display:flex; flex-direction:column; }
+    .step { display:grid; grid-template-columns:36px 1fr; gap:16px; padding:16px 0; border-bottom:1px solid var(--border-subtle); align-items:start; }
+    .step:last-child { border-bottom:none; }
+    .step-num { width:36px; height:36px; border-radius:50%; background:var(--text-primary); color:#fff; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:600; flex-shrink:0; }
+    .step-content strong { display:block; font-size:14px; font-weight:600; margin-bottom:4px; }
+    .step-content span { font-size:14px; color:var(--text-secondary); line-height:1.6; }
+
+    /* Stat Cards */
+    .stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:20px; }
+    .stat-card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:16px 18px; }
+    .stat-num { font-family:'Instrument Serif',serif; font-size:26px; line-height:1; margin-bottom:4px; }
+    .stat-desc { font-size:12px; color:var(--text-secondary); line-height:1.4; }
+
+    /* Signals */
+    .signals { display:flex; flex-direction:column; gap:10px; }
+    .signal { display:flex; align-items:flex-start; gap:12px; padding:14px 16px; background:var(--surface); border:1px solid var(--border); border-radius:8px; font-size:14px; line-height:1.5; color:var(--text-secondary); }
+    .signal-icon { font-size:16px; flex-shrink:0; margin-top:1px; }
+
+    /* Execution Timeline */
+    .exec-timeline { display:flex; flex-direction:column; }
+    .exec-phase { display:grid; grid-template-columns:80px 1fr; gap:16px; padding:18px 0; border-bottom:1px solid var(--border-subtle); align-items:start; }
+    .exec-phase:last-child { border-bottom:none; }
+    .phase-label { font-size:10px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-muted); }
+    .phase-label span { display:block; font-family:'Instrument Serif',serif; font-size:20px; font-weight:normal; letter-spacing:0; text-transform:none; color:var(--accent); line-height:1; margin-bottom:2px; }
+    .exec-tasks { list-style:none; }
+    .exec-tasks li { font-size:14px; color:var(--text-secondary); line-height:1.6; padding:3px 0; display:flex; align-items:baseline; gap:8px; }
+    .exec-tasks li::before { content:'→'; color:var(--accent); flex-shrink:0; font-size:12px; }
+
+    /* Value Ladder */
+    .ladder { display:flex; flex-direction:column; gap:8px; }
+    .rung { background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:14px 18px; display:grid; grid-template-columns:1fr auto; gap:12px; align-items:center; }
+    .rung-label { font-size:13px; font-weight:600; margin-bottom:2px; }
+    .rung-desc { font-size:12px; color:var(--text-secondary); }
+    .rung-value { font-family:'Instrument Serif',serif; font-size:18px; color:var(--green); text-align:right; white-space:nowrap; }
+
+    /* Competitor Table */
+    .comp-table { width:100%; border-collapse:collapse; font-size:13px; }
+    .comp-table th { text-align:left; font-size:10px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); padding:8px 12px; border-bottom:1px solid var(--border); }
+    .comp-table td { padding:12px; border-bottom:1px solid var(--border-subtle); color:var(--text-secondary); }
+    .comp-table td:first-child { font-weight:600; color:var(--text-primary); }
+    .comp-table tr.idea-row td { background:var(--accent-light); color:var(--accent); font-weight:600; }
+    .comp-table tr.idea-row td:first-child { color:var(--accent); }
+
+    /* Keywords */
+    .keywords { display:flex; flex-wrap:wrap; gap:8px; }
+    .kw { font-size:12px; font-weight:500; padding:5px 12px; border-radius:20px; border:1px solid var(--border); background:var(--surface); color:var(--text-secondary); }
+
+    /* CTA Footer */
+    .cta-section { background:var(--text-primary); color:#fff; border-radius:16px; padding:36px 32px; text-align:center; margin-top:48px; }
+    .cta-section h3 { font-family:'Instrument Serif',serif; font-size:28px; margin-bottom:10px; }
+    .cta-section p { font-size:14px; color:rgba(255,255,255,0.65); margin-bottom:24px; }
+    .cta-actions { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+    .cta-btn { font-family:'DM Sans',sans-serif; font-size:13px; font-weight:600; padding:10px 22px; border-radius:8px; border:none; cursor:pointer; }
+    .cta-btn.gold { background:#fcd116; color:var(--text-primary); }
+    .cta-btn.outline { background:transparent; border:1px solid rgba(255,255,255,0.25); color:rgba(255,255,255,0.8); }
+
+    /* Source note */
+    .source-note { font-size:11px; color:var(--text-muted); margin-top:6px; }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .score-card { grid-template-columns:1fr; }
+      .stats-grid { grid-template-columns:1fr; }
+      .exec-phase { grid-template-columns:1fr; }
+      .rung { grid-template-columns:1fr; }
+      .rung-value { text-align:left; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="brand">Idea<span>Browser</span></div>
+  <div class="topbar-right">
+    <button class="pill-btn">💾 Save Idea</button>
+    <button class="pill-btn primary">📬 Get Daily Ideas</button>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- Idea Header -->
+  <div class="idea-header">
+    <div class="tags">
+      <span class="tag accent">🚀 Featured</span>
+      <span class="tag">Health &amp; Wellness</span>
+      <span class="tag">Food &amp; Beverage</span>
+      <span class="tag">Sustainability</span>
+      <span class="tag">D2C</span>
+      <span class="tag">UK Market</span>
+    </div>
+    <div class="idea-number">Idea #001 · Premium CPG</div>
+    <h1 class="idea-title">Vita Press</h1>
+    <p class="idea-tagline">The first organic cold-pressed juice brand built around the aluminium can — hitting the gap every UK competitor has structurally decided to ignore.</p>
+  </div>
+
+  <!-- Opportunity Scorecard -->
+  <div class="score-card">
+    <div class="score-item">
+      <div class="score-label">Market Size (TAM)</div>
+      <div class="score-value green">£3.7B</div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:88%;background:var(--green);"></div></div>
+      <div class="source-note">UK organic food &amp; drink market, 2024 — Soil Association</div>
+    </div>
+    <div class="score-item">
+      <div class="score-label">Opportunity Score</div>
+      <div class="score-value amber">7.4<span style="font-size:14px;color:var(--text-muted)">/10</span></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:74%;"></div></div>
+    </div>
+    <div class="score-item">
+      <div class="score-label">Competition Level</div>
+      <div class="score-value">Medium</div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:50%;background:#aaa;"></div></div>
+    </div>
+  </div>
+
+  <!-- The Problem -->
+  <div class="section">
+    <div class="section-label">The Problem</div>
+    <p>It's 7:45am on a Tuesday. She's just finished a HIIT class at Gymbox Covent Garden, she's drenched, she feels virtuous, and she's heading to the fridge near reception. She picks up a Plenish green juice — £4.00, cold, organic. She notices the bottle: rPET plastic. She puts it back. Not because of the price. Because she spent last week reading about microplastics leaching into drinks stored in plastic. She grabs a water instead. Gymbox just lost a sale. Plenish lost a customer. And nobody in the cold-pressed category noticed.</p>
+
+    <p>The UK organic juice market is booming — growing at 7.3% year-on-year and now part of a £3.7 billion organic food economy. But the entire cold-pressed segment ships in plastic. Plenish: rPET bottles. Coldpress: their signature hexagonal rPET bottle. Juiceman: standard plastic. Every organic juice brand in the UK has made the same choice: invest in the organic credentials, then pack it in the one format their eco-conscious customer is actively avoiding. This isn't a minor oversight — it's a structural blind spot baked into every incumbent's supply chain and brand identity.</p>
+
+    <div class="highlight-box">
+      <p>"Every organic cold-pressed juice brand in the UK uses plastic packaging — while 84% of UK consumers say aluminium cans are the easiest format to recycle. The contradiction is real, the gap is empty, and no one is walking through it."</p>
+    </div>
+
+    <p>Aluminium cans have an 81% recycling rate in the UK (Alupro, 2024). The average UK can contains 73% recycled content. Plastic sits at 30%. The Plastic Packaging Tax, now at £217.85 per tonne and rising annually, is about to make rPET increasingly expensive for competitors. And the UK Deposit Return Scheme — confirmed for October 2027 — will further elevate consumer awareness of can superiority. The window to own "organic + sustainable format" is open now. It will not stay open.</p>
+  </div>
+
+  <!-- The Idea -->
+  <div class="section">
+    <div class="section-label">The Idea</div>
+    <p>Vita Press is a London-based organic cold-pressed juice brand that makes the aluminium can its primary — and defining — packaging format. Think Plenish, but for the consumer who refuses to accept that going organic means accepting plastic. Six signature blends, 250ml cans, 100% certified organic ingredients, zero preservatives. Produced with a commercial-grade Robot Coupe J100 Ultra capable of 100 litres per hour, and sealed in food-grade aluminium cans that keep juice shelf-stable for 12+ months.</p>
+
+    <p>The brand is built around the most media-friendly asset available to a small CPG startup: a genuine family story. A father-daughter joint venture, making organic juice in London, with no additives, no compromises, and a format that matches the product's values. The family angle is the content strategy, the PR hook, and the differentiator that no Britvic-backed brand can replicate. Distribution starts with London's premium gym chains, independent cafes, and weekend farmers markets — the highest-visibility, highest-conversion channels for a brand that needs to be experienced in person first.</p>
+  </div>
+
+  <!-- How It Works -->
+  <div class="section">
+    <div class="section-label">How It Works</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <strong>You pick up a Vita Press at your gym or local deli</strong>
+          <span>The can stands out immediately — in a fridge full of plastic bottles, the aluminium format signals something different before you even read the label. You scan the clean ingredient list: Beetroot, Apple, Ginger. That's it. £3.50.</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <strong>You try it — and notice the format story</strong>
+          <span>On the can: "Infinitely recyclable aluminium. Made in London. No plastic, ever." The taste is cold-pressed quality. The QR code links to a 60-second video of the production process — two people, a commercial juicer, a real kitchen. You follow on Instagram before you've finished the drink.</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <strong>You subscribe or reorder online</strong>
+          <span>The Shopify D2C store sells weekly variety packs and custom bundles. Subscription customers get 15% off and a free "immunity shot" (ginger + elderberry, 60ml can) with every delivery. Margin at D2C: ~70% gross. No middleman.</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <strong>You become a returning stockist or bulk buyer</strong>
+          <span>For gyms, cafes, and delis: wholesale at £2.00–£2.20/can. For corporate offices: monthly case orders. For event catering: premium case rates. Each channel generates repeat revenue without repeat marketing spend.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Now -->
+  <div class="section">
+    <div class="section-label">Why Now</div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">7.3%</div>
+        <div class="stat-desc">UK organic market YoY growth in 2024 — now £3.7 billion total (Soil Association, 2025)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">84%</div>
+        <div class="stat-desc">of UK consumers say aluminium cans are the easiest format to recycle (Can Makers UK, 2025)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">£217/t</div>
+        <div class="stat-desc">UK Plastic Packaging Tax rate — rising annually, increasing costs for all rPET-packaged competitors</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">Oct 2027</div>
+        <div class="stat-desc">UK Deposit Return Scheme goes live — will dramatically increase consumer awareness of can recyclability</div>
+      </div>
+    </div>
+
+    <p>Three trends are converging simultaneously that make 2026 the right year. First: organic food is accelerating, not slowing. The Soil Association's 2025 report shows organic beverages are projected to grow at 17.7% CAGR through 2030 (Grand View Research) — the fastest segment in an already-growing market. Second: the plastic backlash is structural, not fashionable. The Plastic Packaging Tax and incoming DRS create a legislative framework that will price rPET packaging up and reward aluminium brands over the next 36 months.</p>
+
+    <p>Third — and this is the proof of concept — UK beverage brands that built around the can format have dramatically outperformed their plastic-packaged competitors. Dash Water went from launch to £17.2M revenue (+42.1% YoY) selling canned sparkling water. Trip CBD holds 88% of the UK CBD drinks market in cans. MOTH Cocktails sells one can every five seconds in UK supermarkets. Liquid Death — the most obvious case study — turned canned water into a $1.4 billion brand. The format has proven it can transform commodity categories. Cold-pressed organic juice is next.</p>
+  </div>
+
+  <!-- Competition Table -->
+  <div class="section">
+    <div class="section-label">Market Gap / Competitive Landscape</div>
+    <div style="overflow-x:auto;">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Organic?</th>
+            <th>Canned?</th>
+            <th>Price / 250ml</th>
+            <th>Eco Packaging</th>
+            <th>Family / Story Brand</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Plenish</td>
+            <td>Yes</td>
+            <td>✗ rPET plastic</td>
+            <td>£4.00</td>
+            <td>Partial (recycled plastic)</td>
+            <td>✗ Corporate (Britvic-owned)</td>
+          </tr>
+          <tr>
+            <td>Coldpress</td>
+            <td>Partial</td>
+            <td>✗ rPET hexagonal</td>
+            <td>£3.80</td>
+            <td>Partial (recycled plastic)</td>
+            <td>✗ VC-backed, impersonal</td>
+          </tr>
+          <tr>
+            <td>Juiceman</td>
+            <td>No</td>
+            <td>✗ Standard plastic</td>
+            <td>£2.50</td>
+            <td>✗ No</td>
+            <td>✗ No</td>
+          </tr>
+          <tr>
+            <td>MOJU (shots)</td>
+            <td>Partial</td>
+            <td>✗ Plastic shots</td>
+            <td>£2.50 (shot)</td>
+            <td>✗ No</td>
+            <td>✗ Corporate</td>
+          </tr>
+          <tr class="idea-row">
+            <td>Vita Press</td>
+            <td>✓ Yes</td>
+            <td>✓ Aluminium cans</td>
+            <td>£3.50</td>
+            <td>✓ 81% recycled</td>
+            <td>✓ Father-daughter, London</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Proof Signals -->
+  <div class="section">
+    <div class="section-label">Proof Signals</div>
+    <div class="signals">
+      <div class="signal">
+        <span class="signal-icon">🥤</span>
+        <span><strong>Dash Water (UK):</strong> A canned sparkling water brand reached £17.2M revenue with 42.1% YoY growth in 2024, holding 40% market share in UK sparkling water — built entirely on the can format as differentiation.</span>
+      </div>
+      <div class="signal">
+        <span class="signal-icon">💀</span>
+        <span><strong>Liquid Death (US reference):</strong> Took canned water from $3M (2020) to $333M revenue (2024) and a $1.4B valuation. The premise: premium narrative + sustainability credentials + aluminium can format in a category every incumbent served in plastic.</span>
+      </div>
+      <div class="signal">
+        <span class="signal-icon">📊</span>
+        <span><strong>UK beverage cans growing 3.6–5.85% CAGR</strong> through 2030 — more than double the growth rate of plastic bottles (2.89% CAGR). Over 90% of UK consumers purchased a canned drink in 2024, up 7% from 2023 (Can Makers UK, 2025).</span>
+      </div>
+      <div class="signal">
+        <span class="signal-icon">🌿</span>
+        <span><strong>UK organic beverage market:</strong> Projected 17.7% CAGR through 2030 (Grand View Research) — organic beverages are outpacing the already-growing broader organic food category. Consumer demand for certified organic is structural, not cyclical.</span>
+      </div>
+      <div class="signal">
+        <span class="signal-icon">🏋️</span>
+        <span><strong>UK gym market reached £6.5B</strong> in 2025 with 11.5M members. Third Space (14 sites), Gymbox (10), 1Rebel (12), Barry's (9) — 40+ premium London gym locations where a cold-pressed juice at the right price point sells itself daily without marketing spend.</span>
+      </div>
+      <div class="signal">
+        <span class="signal-icon">♻️</span>
+        <span><strong>Format white space confirmed:</strong> Companies House filings for Plenish, Coldpress, and Juiceman confirm all three use plastic or rPET. No premium, organic, cold-pressed juice brand in the UK is currently in aluminium cans. The gap is real and documented.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Execution Plan -->
+  <div class="section">
+    <div class="section-label">Execution Plan</div>
+    <div class="exec-timeline">
+
+      <div class="exec-phase">
+        <div class="phase-label"><span>Days 1–60</span>Validation</div>
+        <ul class="exec-tasks">
+          <li>Register Vita Press Ltd at Companies House (£12, 24 hours)</li>
+          <li>Register food business with local council Environmental Health (free)</li>
+          <li>Complete Level 2 Food Hygiene certification online (£25–£30)</li>
+          <li>Produce 3 test batches (Vita Red, Golden Glow, Green Power) — 100 cans each</li>
+          <li>Approach 20 gyms, cafes, and delis with sample cases — target: 5 stockist commitments before scaling production</li>
+          <li><strong>Go/no-go signal: 5 confirmed stockists who paid for stock.</strong> Do not produce the next batch until this is confirmed.</li>
+        </ul>
+      </div>
+
+      <div class="exec-phase">
+        <div class="phase-label"><span>Months 2–4</span>Launch</div>
+        <ul class="exec-tasks">
+          <li>First full production batch: 500 cans across 3 flavours</li>
+          <li>Launch Instagram and TikTok — lead with the production story, not the product</li>
+          <li>Apply for Soil Association Organic Certification (£400–£600, ~6-month process)</li>
+          <li>Launch Shopify D2C store — simple, clean, mobile-first</li>
+          <li>First farmers market appearances: Borough, Brixton, Broadway</li>
+          <li>Send sample cases to 10 London fitness/wellness micro-influencers (no fee, product-only)</li>
+        </ul>
+      </div>
+
+      <div class="exec-phase">
+        <div class="phase-label"><span>Months 5–9</span>Scale</div>
+        <ul class="exec-tasks">
+          <li>Receive Soil Association certification — update all labels and marketing</li>
+          <li>Launch on Amazon UK and Ocado Marketplace</li>
+          <li>Pitch Whole Foods Market, Planet Organic, Selfridges Food Hall</li>
+          <li>Target corporate office catering contracts (London, City focus)</li>
+          <li>Launch paid Google Ads: "organic juice London", "healthy drink delivery UK"</li>
+          <li>Approach premium gym chains for exclusive fridge placement deals</li>
+        </ul>
+      </div>
+
+      <div class="exec-phase">
+        <div class="phase-label"><span>Months 10–24</span>Expand</div>
+        <ul class="exec-tasks">
+          <li>Approach national distributors: CLF, Epicurium, Cotswold Fayre</li>
+          <li>Launch loyalty subscription model (weekly/monthly bundles)</li>
+          <li>Begin private label conversations with gym chains and wellness studios</li>
+          <li>Initiate Dubai/UAE export strategy (leveraging Eugene's existing luxury network)</li>
+          <li>Explore HPP (High-Pressure Processing) to extend shelf life and meet supermarket requirements</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Value Ladder -->
+  <div class="section">
+    <div class="section-label">Value Ladder</div>
+    <div class="ladder">
+      <div class="rung">
+        <div>
+          <div class="rung-label">Core: Wholesale to Gyms, Cafes &amp; Delis</div>
+          <div class="rung-desc">Day 1 revenue stream. £2.00–£2.20 per can. 55% gross margin. ~11,000 cans Year 1 target.</div>
+        </div>
+        <div class="rung-value">~£23,420</div>
+      </div>
+      <div class="rung">
+        <div>
+          <div class="rung-label">D2C: Shopify + Amazon + Subscription Boxes</div>
+          <div class="rung-desc">Sells at full RRP (£3.25–£3.75). 70% gross margin. Subscription model adds recurring revenue from Month 4+.</div>
+        </div>
+        <div class="rung-value">+£15,000–£20,000</div>
+      </div>
+      <div class="rung">
+        <div>
+          <div class="rung-label">National Retail: Whole Foods, Planet Organic, Ocado</div>
+          <div class="rung-desc">Year 1 pipeline; Year 2 target. Volume channel. Organic certification required. Distributor margin accepted (~30%).</div>
+        </div>
+        <div class="rung-value">£60,000–£150,000 / yr</div>
+      </div>
+      <div class="rung">
+        <div>
+          <div class="rung-label">Private Label + Dubai/UAE Export</div>
+          <div class="rung-desc">White-label for gym chains and wellness brands. UAE market entry via Eugene's existing luxury network. Year 2+ horizon.</div>
+        </div>
+        <div class="rung-value">£150,000+ target</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Keywords -->
+  <div class="section">
+    <div class="section-label">Keywords / SEO Angles</div>
+    <div class="keywords">
+      <span class="kw">organic cold pressed juice London</span>
+      <span class="kw">organic juice canned UK</span>
+      <span class="kw">healthy drinks delivery UK</span>
+      <span class="kw">premium organic juice brand</span>
+      <span class="kw">cold pressed juice subscription UK</span>
+      <span class="kw">eco-friendly juice UK</span>
+      <span class="kw">organic juice wholesale</span>
+      <span class="kw">healthy office drinks London</span>
+      <span class="kw">beetroot cold pressed juice</span>
+      <span class="kw">organic juice gym</span>
+      <span class="kw">sustainable juice brand UK</span>
+      <span class="kw">organic canned beverages UK</span>
+    </div>
+  </div>
+
+  <!-- CTA Footer -->
+  <div class="cta-section">
+    <h3>Want 365 ideas like this?</h3>
+    <p>Join 50,000+ founders getting a pre-validated startup idea with full market research every morning.</p>
+    <div class="cta-actions">
+      <button class="cta-btn gold">📬 Get Daily Ideas — Free</button>
+      <button class="cta-btn outline">🔖 Save This Idea</button>
+    </div>
+  </div>
+
+  <!-- Attribution -->
+  <p style="text-align:center; font-size:11px; color:var(--text-muted); margin-top:32px;">
+    Evaluated for Eugene &amp; Daughter | Vita Press Ltd (proposed) | March 2026<br>
+    Sources: Soil Association Organic Market Report 2025 · Can Makers UK 2025 · Alupro UK 2024 · Leisure DB 2025 · Grand View Research · Companies House UK
+  </p>
+
+</div>
+</body>
+</html>

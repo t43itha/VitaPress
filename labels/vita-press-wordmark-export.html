@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vita Press Wordmark — Export as PNG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #f0f0f0;
+      font-family: sans-serif;
+    }
+    .instructions {
+      margin-bottom: 24px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+    canvas {
+      border: 1px dashed #ccc;
+      background: white;
+    }
+    button {
+      margin-top: 16px;
+      padding: 12px 32px;
+      font-size: 16px;
+      background: #1A1815;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover { background: #333; }
+    .variants { display: flex; gap: 32px; margin-top: 32px; }
+    .variant { text-align: center; }
+    .variant p { font-size: 12px; color: #999; margin-top: 8px; }
+  </style>
+</head>
+<body>
+
+  <div class="instructions">
+    <strong>Vita Press Wordmark — 300dpi PNG Export</strong><br>
+    Click the buttons below to download each version.
+  </div>
+
+  <div class="variants">
+    <div class="variant">
+      <canvas id="canvasDark" width="1800" height="360"></canvas>
+      <p>Dark (for light/transparent labels)</p>
+      <button onclick="download('canvasDark', 'vita-press-wordmark-dark.png')">Download Dark</button>
+    </div>
+    <div class="variant">
+      <canvas id="canvasWhite" width="1800" height="360"></canvas>
+      <p>White (for dark juice backgrounds)</p>
+      <button onclick="download('canvasWhite', 'vita-press-wordmark-white.png')">Download White</button>
+    </div>
+  </div>
+
+  <script>
+    // Wait for font to load
+    document.fonts.load('72px "Instrument Serif"').then(() => {
+      drawWordmark('canvasDark', '#1A1815', 'transparent');
+      drawWordmark('canvasWhite', '#FFFFFF', 'transparent');
+    });
+
+    function drawWordmark(canvasId, textColor, bgColor) {
+      const canvas = document.getElementById(canvasId);
+      const ctx = canvas.getContext('2d');
+
+      // Transparent background
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Text settings — 216px at 3x = 72pt at 300dpi
+      ctx.font = '216px "Instrument Serif", Georgia, serif';
+      ctx.fillStyle = textColor;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.letterSpacing = '38px';
+
+      ctx.fillText('VITA PRESS', canvas.width / 2, canvas.height / 2);
+    }
+
+    function download(canvasId, filename) {
+      const canvas = document.getElementById(canvasId);
+      const link = document.createElement('a');
+      link.download = filename;
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }
+  </script>
+
+</body>
+</html>
