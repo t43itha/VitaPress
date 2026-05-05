@@ -1,0 +1,166 @@
+{
+  "slideshow_1_pt_swap": {
+    "name": "PT Pre-Workout Swap (K&L)",
+    "hook_variable": "Authority figure reveal hook",
+    "blend": "Liver & Kidney",
+    "bottle_image": "/tmp/VitaPress/vita-press-video/public/liver-kidney-bottle.png",
+    "slides": [
+      {
+        "prompt": "iPhone photo of gym pre-workout powder tub and a 250ml juice bottle side by side on dark moody slate surface, dramatic lighting, raw unpolished feel, slight shadow, realistic phone camera quality, portrait orientation",
+        "text": "My PT said replace\npre-workout with this\n£3.50 bottle"
+      },
+      {
+        "prompt": "iPhone photo of whole fresh beetroot on dark slate surface, moody lighting, deep purple-red color, natural earthy texture, slightly imperfect, realistic phone camera quality, portrait orientation",
+        "text": "129g beetroot\nper bottle\nnatural nitrates"
+      },
+      {
+        "prompt": "iPhone photo of fresh carrots on dark slate surface, moody lighting, orange vegetables, natural texture, slightly muddy, realistic phone camera quality, portrait orientation",
+        "text": "125g carrot\npacked with\nvitamin A"
+      },
+      {
+        "prompt": "iPhone photo of Granny Smith apples and fresh ginger root on dark slate surface, moody dramatic lighting, green apples and tan ginger, natural rustic feel, realistic phone camera quality, portrait orientation",
+        "text": "129g apple\n27g ginger\nno powder\nno fillers"
+      },
+      {
+        "prompt": "iPhone photo of expensive pre-workout supplement tub with price tag vs small juice bottle on dark slate, moody lighting, price comparison setup, realistic phone camera quality, portrait orientation",
+        "text": "£3.50 vs\n£35 a tub\nsame energy\nno chemicals"
+      },
+      {
+        "prompt": "Dark moody slate background with warm subtle lighting, minimal texture, empty centered space for bottle placement, realistic phone camera quality, portrait orientation",
+        "text": "Comment 🧃\nto pre-order\nSunday pickup or\nLondon delivery\n£3.50 / 3 for £10"
+      }
+    ]
+  },
+  "slideshow_2_ingredient_math": {
+    "name": "What's Actually In This Bottle (K&L)",
+    "hook_variable": "Transparency/curiosity hook",
+    "blend": "Liver & Kidney",
+    "bottle_image": "/tmp/VitaPress/vita-press-video/public/liver-kidney-bottle.png",
+    "slides": [
+      {
+        "prompt": "iPhone photo of a 250ml juice bottle on dark slate surface with scattered vegetables around it, moody lighting, questioning composition, realistic phone camera quality, portrait orientation",
+        "text": "What's actually\nin your £3.50\njuice?"
+      },
+      {
+        "prompt": "iPhone photo of whole beetroot being weighed on kitchen scale showing 129g, dark moody background, natural lighting, real kitchen setup feel, realistic phone camera quality, portrait orientation",
+        "text": "129g beetroot\nweighed fresh\nevery bottle"
+      },
+      {
+        "prompt": "iPhone photo of fresh carrots being weighed on kitchen scale showing 125g, dark background, natural lighting, imperfect vegetables, realistic phone camera quality, portrait orientation",
+        "text": "125g carrot\nmore veg than\nyour dinner"
+      },
+      {
+        "prompt": "iPhone photo of Granny Smith apples on scale showing 129g, dark moody slate surface, natural lighting, realistic phone camera quality, portrait orientation",
+        "text": "129g Granny Smith\napple base"
+      },
+      {
+        "prompt": "iPhone photo of fresh ginger root on scale showing 27g, dark background, natural texture close-up, realistic phone camera quality, portrait orientation",
+        "text": "27g ginger\nmore veg than most\nrestaurant sides"
+      },
+      {
+        "prompt": "iPhone photo of fresh produce ingredients laid out together on dark slate, moody lighting, all vegetables visible, realistic phone camera quality, portrait orientation",
+        "text": "410g fresh produce\nin every 250ml\ncold-pressed\nnothing added"
+      },
+      {
+        "prompt": "Dark moody slate background with warm subtle lighting, minimal texture, empty centered space for bottle placement, realistic phone camera quality, portrait orientation",
+        "text": "Comment 🧃\nto pre-order\nSunday pickup or\nLondon delivery\n£3.50 / 3 for £10"
+      }
+    ]
+  },
+  "slideshow_3_iron_deficient": {
+    "name": "Iron Deficient Authority (K&L)",
+    "hook_variable": "Medical authority + personal problem hook",
+    "blend": "Liver & Kidney",
+    "bottle_image": "/tmp/VitaPress/vita-press-video/public/liver-kidney-bottle.png",
+    "slides": [
+      {
+        "prompt": "iPhone photo of doctor's notepad with 'iron deficiency' written on it next to a juice bottle, dark moody background, realistic phone camera quality, portrait orientation",
+        "text": "My nutritionist\ntold me to drink\nthis every morning"
+      },
+      {
+        "prompt": "iPhone photo of beetroot cut in half showing deep purple interior on dark slate, moody lighting, natural iron-rich food, realistic phone camera quality, portrait orientation",
+        "text": "Beetroot = natural\niron without\nsynthetic supplements"
+      },
+      {
+        "prompt": "iPhone photo of fresh beetroot juice in glass showing deep red color, dark background, natural lighting, realistic phone camera quality, portrait orientation",
+        "text": "Natural nitrates\nbetter than pills"
+      },
+      {
+        "prompt": "iPhone photo split comparison: tired person morning vs energized person afternoon, natural phone photo feel, realistic lighting, portrait orientation",
+        "text": "Before: tired\nall day\nAfter: actually\nhave energy"
+      },
+      {
+        "prompt": "iPhone photo of supplement pill bottles vs fresh juice bottle on dark slate, moody lighting, natural vs synthetic comparison, realistic phone camera quality, portrait orientation",
+        "text": "No synthetic iron\nno stomach issues\njust real food"
+      },
+      {
+        "prompt": "Dark moody slate background with warm subtle lighting, minimal texture, empty centered space for bottle placement, realistic phone camera quality, portrait orientation",
+        "text": "Comment 🧃\nto pre-order\nSunday pickup or\nLondon delivery\n£3.50 / 3 for £10"
+      }
+    ]
+  },
+  "slideshow_4_london_fridge": {
+    "name": "London Girlies Fridge (Skin Boost)",
+    "hook_variable": "Aspirational identity hook",
+    "blend": "Skin Boost",
+    "bottle_image": "/tmp/VitaPress/vita-press-video/public/skin-boost-bottle.png",
+    "slides": [
+      {
+        "prompt": "iPhone photo of open fridge with skincare products on shelf next to juice bottles, London flat aesthetic, natural lighting, realistic phone camera quality, portrait orientation",
+        "text": "London girlies —\nwhat's in my fridge\ninstead of skincare"
+      },
+      {
+        "prompt": "iPhone photo of fresh oranges cut open on dark slate surface, moody lighting, vibrant orange color, vitamin C rich, realistic phone camera quality, portrait orientation",
+        "text": "182g orange\nper bottle\nvitamin C bomb"
+      },
+      {
+        "prompt": "iPhone photo of fresh limes and carrots on dark slate, moody lighting, green and orange vegetables, natural texture, realistic phone camera quality, portrait orientation",
+        "text": "38g lime\n87g carrot\napple base"
+      },
+      {
+        "prompt": "iPhone photo of expensive vitamin C serum bottle next to juice bottle on dark slate, price comparison, moody lighting, realistic phone camera quality, portrait orientation",
+        "text": "Vitamin C serum:\n£40 topical\nVita Press:\n£3.50 from inside"
+      },
+      {
+        "prompt": "iPhone photo of fresh glowing skin close-up, natural lighting, no filters, realistic phone camera quality, portrait orientation",
+        "text": "Drink your skincare\nactual results"
+      },
+      {
+        "prompt": "Dark moody slate background with warm subtle lighting, minimal texture, empty centered space for bottle placement, realistic phone camera quality, portrait orientation",
+        "text": "Comment 🧃\nto pre-order\nSunday pickup or\nLondon delivery\n£3.50 / 3 for £10"
+      }
+    ]
+  },
+  "slideshow_5_boomer_bait": {
+    "name": "Boomer-Bait Mistake (K&L)",
+    "hook_variable": "Intentional imperfection for engagement",
+    "blend": "Liver & Kidney",
+    "bottle_image": "/tmp/VitaPress/vita-press-video/public/liver-kidney-bottle.png",
+    "slides": [
+      {
+        "prompt": "iPhone photo of fresh juice bottle on dark slate surface with vegetables scattered around, moody lighting, raw unpolished feel, realistic phone camera quality, portrait orientation",
+        "text": "introducting\nVita Press\ncold-pressed juice"
+      },
+      {
+        "prompt": "iPhone photo of beetroot and carrots on dark slate, moody lighting, natural vegetables, realistic phone camera quality, portrait orientation",
+        "text": "Beetroot + carrot\n+ apple + ginger\n250ml bottles"
+      },
+      {
+        "prompt": "iPhone photo of fresh produce being cold-pressed in juicer, dark background, natural process shot, realistic phone camera quality, portrait orientation",
+        "text": "Cold-pressed\nevery Sunday\nno HPP\nno pasterization"
+      },
+      {
+        "prompt": "iPhone photo of three juice bottles lined up on dark slate, moody lighting, product shot, realistic phone camera quality, portrait orientation",
+        "text": "£3.50 each or\n3 for £10\nLondon delivery"
+      },
+      {
+        "prompt": "iPhone photo of fresh ingredients with price breakdown visible on dark slate, moody lighting, transparency shot, realistic phone camera quality, portrait orientation",
+        "text": "Fresh ingredients\nsame day pressed\nno preservatives"
+      },
+      {
+        "prompt": "Dark moody slate background with warm subtle lighting, minimal texture, empty centered space for bottle placement, realistic phone camera quality, portrait orientation",
+        "text": "Comment 🧃\nto pre-order\nSunday pickup or\nLondon delivery\nWhat did you spot?"
+      }
+    ]
+  }
+}
