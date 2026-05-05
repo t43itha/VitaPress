@@ -16,8 +16,7 @@ build/
 */dist/
 */build/
 
-# Large media (track via Git LFS or external storage instead)
-videos/
+# Video files (PNGs in videos/ are tracked, .mp4 files are not)
 *.mp4
 *.mov
 *.avi
