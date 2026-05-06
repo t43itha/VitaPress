@@ -65,14 +65,17 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            gap: 2px;
+            gap: 8px;
             margin: 28px 0 8px;
+            padding: 0 8px;
             opacity: 0; animation: rise .7s ease-out .1s forwards;
         }
         .bottles-strip img {
-            height: 140px;
+            height: 130px;
             width: auto;
             object-fit: contain;
+            flex-shrink: 1;
+            max-width: 22%;
             transition: transform .3s ease;
         }
         .bottles-strip img:hover { transform: translateY(-6px); }
@@ -327,9 +330,18 @@
         }
 
         @media (max-width: 374px) {
-            .bottles-strip img { height: 110px; }
+            .bottles-strip img { height: 100px; }
+            .bottles-strip { gap: 6px; }
             .blend-picks { grid-template-columns: 1fr; }
             .row-2 { flex-direction: column; }
+            .wordmark { height: 32px; }
+            .tagline { font-size: 1rem; }
+            .btn-order { font-size: 1rem; padding: 16px 24px; }
+        }
+
+        @media (min-width: 375px) and (max-width: 480px) {
+            .bottles-strip img { height: 115px; }
+            .page { padding: 0 18px; }
         }
     </style>
 </head>
