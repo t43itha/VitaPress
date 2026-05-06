@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;display=swap');
+      .wordmark {
+        font-family: 'Instrument Serif', 'Georgia', 'Times New Roman', serif;
+        font-size: 72px;
+        letter-spacing: 0.18em;
+        fill: #1A1815;
+      }
+    </style>
+  </defs>
+  <text x="300" y="78" text-anchor="middle" class="wordmark">VITA PRESS</text>
+</svg>
