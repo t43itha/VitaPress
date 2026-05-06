@@ -27,9 +27,7 @@
             --serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
             --sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
         }
-
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
             font-family: var(--sans);
             background: var(--bg);
@@ -38,173 +36,126 @@
             -webkit-font-smoothing: antialiased;
             min-height: 100dvh;
         }
+        .page { max-width: 480px; margin: 0 auto; padding: 0 20px; }
 
-        .page { max-width: 480px; margin: 0 auto; padding: 0 24px; }
-
-        /* Hero */
+        /* ── Hero ── */
         .hero {
             text-align: center;
-            padding: 56px 0 16px;
+            padding: 52px 0 12px;
             opacity: 0; animation: rise .7s ease-out forwards;
         }
-        .wordmark-wrap { margin-bottom: 20px; }
         .wordmark {
-            height: 40px; width: auto;
+            height: 38px; width: auto;
             filter: invert(1) brightness(0.94) sepia(0.08);
+            margin-bottom: 14px;
         }
         .tagline {
             font-family: var(--serif);
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             color: var(--text-secondary);
             font-style: italic;
-            letter-spacing: 0.01em;
         }
-
-        /* Bottles hero strip */
-        .bottles-strip {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            gap: 8px;
-            margin: 28px 0 8px;
-            padding: 0 8px;
-            opacity: 0; animation: rise .7s ease-out .1s forwards;
-        }
-        .bottles-strip img {
-            height: 130px;
-            width: auto;
-            object-fit: contain;
-            flex-shrink: 1;
-            max-width: 22%;
-            transition: transform .3s ease;
-        }
-        .bottles-strip img:hover { transform: translateY(-6px); }
-
-        /* Pricing badge */
-        .pricing-badge {
-            text-align: center;
-            margin: 12px 0 32px;
-            opacity: 0; animation: rise .7s ease-out .15s forwards;
-        }
-        .pricing-badge p {
+        .pricing {
+            margin-top: 14px;
             display: inline-block;
-            padding: 8px 20px;
+            padding: 7px 18px;
             background: var(--accent-glow);
-            border: 1px solid rgba(212,149,106,0.2);
+            border: 1px solid rgba(212,149,106,0.18);
             border-radius: 100px;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: 600;
             color: var(--accent-warm);
-            letter-spacing: 0.02em;
         }
 
-        /* Primary CTA */
-        .cta-main {
-            margin-bottom: 32px;
-            opacity: 0; animation: rise .7s ease-out .2s forwards;
+        /* ── Blend selector cards (tap to select) ── */
+        .blend-selector {
+            margin: 28px 0 24px;
+            opacity: 0; animation: rise .7s ease-out .12s forwards;
         }
-        .btn-order {
-            display: block; width: 100%;
-            padding: 18px 32px;
-            background: var(--accent);
-            color: var(--bg);
-            font-family: var(--sans);
-            font-size: 1.1rem; font-weight: 700;
-            text-decoration: none; text-align: center;
-            border-radius: 14px; border: none; cursor: pointer;
-            transition: transform .2s, box-shadow .2s, background .2s;
-            box-shadow: 0 4px 20px rgba(212,149,106,0.25);
-            letter-spacing: 0.01em;
-        }
-        .btn-order:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 28px rgba(212,149,106,0.35);
-            background: var(--accent-warm);
-        }
-
-        /* Blends */
-        .blends {
-            margin: 0 0 36px;
-            opacity: 0; animation: rise .7s ease-out .25s forwards;
-        }
-        .blends-title {
+        .blend-selector-label {
             font-family: var(--serif);
-            font-size: 1.35rem;
+            font-size: 1.2rem;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 14px;
             color: var(--text);
         }
+        .blend-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
         .blend-card {
-            display: flex; align-items: center; gap: 16px;
-            padding: 16px;
+            position: relative;
+            display: flex; flex-direction: column; align-items: center;
+            padding: 18px 10px 14px;
             background: var(--surface);
-            border: 1px solid var(--border);
+            border: 2px solid var(--border);
             border-radius: 14px;
-            margin-bottom: 10px;
+            cursor: pointer;
+            transition: border-color .25s, background .25s, transform .2s;
+            -webkit-tap-highlight-color: transparent;
+            text-align: center;
+        }
+        .blend-card:active { transform: scale(0.97); }
+        .blend-card.selected {
+            border-color: var(--accent);
+            background: var(--accent-glow);
+        }
+        .blend-card .check {
+            position: absolute; top: 10px; right: 10px;
+            width: 22px; height: 22px;
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255,0.15);
             transition: background .2s, border-color .2s;
+            display: flex; align-items: center; justify-content: center;
         }
-        .blend-card:hover {
-            background: var(--surface-hover);
-            border-color: rgba(212,149,106,0.15);
+        .blend-card.selected .check {
+            background: var(--accent);
+            border-color: var(--accent);
         }
+        .blend-card.selected .check::after {
+            content: '✓';
+            color: var(--bg);
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .blend-card input { display: none; }
         .blend-card img {
-            width: 56px; height: auto;
-            object-fit: contain; flex-shrink: 0;
+            height: 72px; width: auto;
+            object-fit: contain;
+            margin-bottom: 8px;
+            transition: transform .3s;
         }
-        .blend-info { flex: 1; min-width: 0; }
-        .blend-name {
-            font-weight: 700; font-size: 1rem;
-            margin-bottom: 2px;
-        }
+        .blend-card.selected img { transform: translateY(-3px); }
+        .blend-name { font-weight: 700; font-size: 0.9rem; margin-bottom: 2px; }
         .blend-sub {
             font-family: var(--serif);
             font-style: italic;
-            font-size: 0.88rem;
+            font-size: 0.78rem;
             color: var(--accent);
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
         .blend-ing {
-            font-size: 0.78rem;
+            font-size: 0.68rem;
             color: var(--text-tertiary);
-            letter-spacing: 0.01em;
+            line-height: 1.35;
         }
 
-        /* Fulfillment */
-        .fulfillment {
-            text-align: center;
-            padding: 14px 16px;
-            margin-bottom: 32px;
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-            opacity: 0; animation: rise .7s ease-out .3s forwards;
+        /* ── Form ── */
+        .order-form {
+            margin-bottom: 28px;
+            opacity: 0; animation: rise .7s ease-out .2s forwards;
         }
-        .fulfillment p {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            font-weight: 500;
-        }
-
-        /* Order form */
-        .order-section {
-            margin-bottom: 36px;
-            opacity: 0; animation: rise .7s ease-out .35s forwards;
-        }
-        .order-title {
-            font-family: var(--serif);
-            font-size: 1.35rem;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .form { display: flex; flex-direction: column; gap: 14px; }
-        .field { display: flex; flex-direction: column; gap: 5px; }
+        .form { display: flex; flex-direction: column; gap: 12px; }
+        .field { display: flex; flex-direction: column; gap: 4px; }
         .field label {
-            font-size: 0.82rem; font-weight: 600;
+            font-size: 0.78rem; font-weight: 600;
             color: var(--text-secondary);
-            letter-spacing: 0.02em;
+            letter-spacing: 0.03em;
             text-transform: uppercase;
         }
         .field input, .field select, .field textarea {
-            padding: 13px 14px;
+            padding: 12px 14px;
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 10px;
@@ -214,8 +165,7 @@
             transition: border-color .2s;
         }
         .field input:focus, .field select:focus, .field textarea:focus {
-            outline: none;
-            border-color: var(--accent);
+            outline: none; border-color: var(--accent);
         }
         .field select {
             appearance: none;
@@ -224,44 +174,22 @@
             background-position: right 14px center;
         }
         .field select option { background: var(--surface); color: var(--text); }
-        .field textarea { resize: vertical; min-height: 60px; }
-
-        .blend-picks {
-            display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
-        }
-        .blend-pick {
-            display: flex; align-items: center; gap: 8px;
-            padding: 11px 12px;
-            background: var(--surface);
-            border: 1.5px solid var(--border);
-            border-radius: 10px;
-            cursor: pointer;
-            transition: border-color .2s, background .2s;
-            font-size: 0.85rem; font-weight: 600;
-        }
-        .blend-pick:has(input:checked) {
-            border-color: var(--accent);
-            background: var(--accent-glow);
-        }
-        .blend-pick input { accent-color: var(--accent); width: 16px; height: 16px; cursor: pointer; }
-        .blend-pick img { width: 28px; height: auto; }
-
+        .field textarea { resize: vertical; min-height: 52px; }
         .row-2 { display: flex; gap: 10px; }
         .row-2 .field { flex: 1; }
 
         .btn-submit {
-            padding: 16px;
+            width: 100%; padding: 16px;
             background: var(--accent);
             color: var(--bg);
             font-family: var(--sans);
-            font-size: 1.05rem; font-weight: 700;
-            border: none; border-radius: 12px;
+            font-size: 1.1rem; font-weight: 700;
+            border: none; border-radius: 14px;
             cursor: pointer;
             transition: transform .2s, box-shadow .2s;
-            box-shadow: 0 4px 16px rgba(212,149,106,0.2);
-            letter-spacing: 0.01em;
+            box-shadow: 0 4px 18px rgba(212,149,106,0.22);
         }
-        .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,149,106,0.3); }
+        .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,149,106,0.32); }
         .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
 
         .form-done {
@@ -270,59 +198,61 @@
             border: 1px solid rgba(74,222,128,0.2);
             border-radius: 14px;
         }
-        .form-done h3 { color: var(--green); font-size: 1.2rem; margin-bottom: 6px; }
-        .form-done p { color: var(--text-secondary); font-size: 0.9rem; }
+        .form-done h3 { color: var(--green); font-size: 1.15rem; margin-bottom: 4px; }
+        .form-done p { color: var(--text-secondary); font-size: 0.88rem; }
 
-        /* WhatsApp */
-        .wa-section {
-            margin-bottom: 32px;
-            opacity: 0; animation: rise .7s ease-out .4s forwards;
+        /* ── Pickup / WhatsApp ── */
+        .fulfillment {
+            text-align: center; padding: 12px;
+            margin-bottom: 20px;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            opacity: 0; animation: rise .7s ease-out .28s forwards;
         }
+        .fulfillment p { font-size: 0.82rem; color: var(--text-secondary); font-weight: 500; }
+
         .btn-wa {
             display: block; width: 100%;
             padding: 14px 24px;
+            margin-bottom: 24px;
             background: var(--green-dim);
-            border: 1.5px solid rgba(74,222,128,0.25);
+            border: 1.5px solid rgba(74,222,128,0.22);
             color: var(--green);
             font-family: var(--sans);
-            font-size: 0.95rem; font-weight: 600;
+            font-size: 0.92rem; font-weight: 600;
             text-decoration: none; text-align: center;
             border-radius: 12px;
             transition: background .2s, transform .2s;
+            opacity: 0; animation: rise .7s ease-out .32s forwards;
         }
         .btn-wa:hover { background: rgba(74,222,128,0.18); transform: translateY(-2px); }
 
-        /* Social */
+        /* ── Footer ── */
         .socials {
-            display: flex; justify-content: center; gap: 16px;
-            margin-bottom: 36px;
-            opacity: 0; animation: rise .7s ease-out .45s forwards;
+            display: flex; justify-content: center; gap: 14px;
+            margin-bottom: 28px;
+            opacity: 0; animation: rise .7s ease-out .36s forwards;
         }
         .social-pill {
-            padding: 10px 18px;
+            padding: 9px 16px;
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 10px;
             color: var(--text);
             text-decoration: none;
-            font-size: 0.85rem; font-weight: 600;
+            font-size: 0.82rem; font-weight: 600;
             transition: background .2s;
         }
         .social-pill:hover { background: var(--surface-hover); }
 
-        /* Footer */
         .footer {
             text-align: center;
-            padding: 32px 0 40px;
+            padding: 24px 0 36px;
             border-top: 1px solid var(--border);
-            opacity: 0; animation: rise .7s ease-out .5s forwards;
+            opacity: 0; animation: rise .7s ease-out .4s forwards;
         }
-        .footer p {
-            font-size: 0.78rem;
-            color: var(--text-tertiary);
-            letter-spacing: 0.02em;
-        }
-        .footer p + p { margin-top: 6px; }
+        .footer p { font-size: 0.75rem; color: var(--text-tertiary); }
+        .footer p + p { margin-top: 4px; }
 
         @keyframes rise {
             from { opacity: 0; transform: translateY(12px); }
@@ -330,129 +260,75 @@
         }
 
         @media (max-width: 374px) {
-            .bottles-strip img { height: 100px; }
-            .bottles-strip { gap: 6px; }
-            .blend-picks { grid-template-columns: 1fr; }
+            .blend-grid { gap: 8px; }
+            .blend-card { padding: 14px 8px 12px; }
+            .blend-card img { height: 58px; }
+            .blend-name { font-size: 0.82rem; }
             .row-2 { flex-direction: column; }
-            .wordmark { height: 32px; }
-            .tagline { font-size: 1rem; }
-            .btn-order { font-size: 1rem; padding: 16px 24px; }
-        }
-
-        @media (min-width: 375px) and (max-width: 480px) {
-            .bottles-strip img { height: 115px; }
-            .page { padding: 0 18px; }
+            .wordmark { height: 30px; }
+            .tagline { font-size: 0.95rem; }
         }
     </style>
 </head>
 <body>
     <div class="page">
+        <!-- Hero -->
         <header class="hero">
-            <div class="wordmark-wrap">
-                <img src="assets/wordmark.svg" alt="Vita Press" class="wordmark">
-            </div>
-            <p class="tagline">Fresh cold-pressed juice, made in London every Sunday</p>
+            <img src="assets/wordmark.svg" alt="Vita Press" class="wordmark"><br>
+            <span class="tagline">Fresh cold-pressed juice, made in London every Sunday</span>
+            <br><span class="pricing">£3.50 each · 3 for £10</span>
         </header>
 
-        <div class="bottles-strip">
-            <img src="assets/bottle-kl.png" alt="Liver & Kidney juice" loading="lazy">
-            <img src="assets/bottle-sb.png" alt="Skin Boost juice" loading="lazy">
-            <img src="assets/bottle-ib.png" alt="Immunity Boost juice" loading="lazy">
-            <img src="assets/bottle-dx.png" alt="Detox juice" loading="lazy">
-        </div>
-
-        <div class="pricing-badge">
-            <p>£3.50 each · 3 for £10</p>
-        </div>
-
-        <div class="cta-main">
-            <a href="#order" class="btn-order" id="ctaScroll">Pre-order for Sunday</a>
-        </div>
-
-        <section class="blends">
-            <h2 class="blends-title">Four blends</h2>
-
-            <div class="blend-card">
-                <img src="assets/bottle-kl.png" alt="K&L">
-                <div class="blend-info">
-                    <div class="blend-name">Liver & Kidney</div>
-                    <div class="blend-sub">Nature's pre-workout</div>
-                    <div class="blend-ing">Beetroot · Carrot · Apple · Ginger</div>
+        <!-- Blend selector: showcase + choose in one -->
+        <form class="form" id="orderForm" action="https://formsubmit.co/muffinbott3@gmail.com" method="POST">
+            <section class="blend-selector">
+                <p class="blend-selector-label">Tap to choose your blends</p>
+                <div class="blend-grid">
+                    <label class="blend-card" data-blend="kl">
+                        <span class="check"></span>
+                        <input type="checkbox" name="blends" value="Liver & Kidney">
+                        <img src="assets/bottle-kl.png" alt="Liver & Kidney">
+                        <div class="blend-name">Liver & Kidney</div>
+                        <div class="blend-sub">Nature's pre-workout</div>
+                        <div class="blend-ing">Beetroot · Carrot · Apple · Ginger</div>
+                    </label>
+                    <label class="blend-card" data-blend="sb">
+                        <span class="check"></span>
+                        <input type="checkbox" name="blends" value="Skin Boost">
+                        <img src="assets/bottle-sb.png" alt="Skin Boost">
+                        <div class="blend-name">Skin Boost</div>
+                        <div class="blend-sub">Drink your skincare</div>
+                        <div class="blend-ing">Orange · Apple · Carrot · Lime</div>
+                    </label>
+                    <label class="blend-card" data-blend="ib">
+                        <span class="check"></span>
+                        <input type="checkbox" name="blends" value="Immunity Boost">
+                        <img src="assets/bottle-ib.png" alt="Immunity Boost">
+                        <div class="blend-name">Immunity Boost</div>
+                        <div class="blend-sub">Bottled sunshine with a kick</div>
+                        <div class="blend-ing">Orange · Carrot · Lime · Ginger</div>
+                    </label>
+                    <label class="blend-card" data-blend="dx">
+                        <span class="check"></span>
+                        <input type="checkbox" name="blends" value="Detox">
+                        <img src="assets/bottle-dx.png" alt="Detox">
+                        <div class="blend-name">Detox</div>
+                        <div class="blend-sub">Green hydration</div>
+                        <div class="blend-ing">Celery · Cucumber · Apple · Lime</div>
+                    </label>
                 </div>
-            </div>
+            </section>
 
-            <div class="blend-card">
-                <img src="assets/bottle-sb.png" alt="Skin Boost">
-                <div class="blend-info">
-                    <div class="blend-name">Skin Boost</div>
-                    <div class="blend-sub">Drink your skincare</div>
-                    <div class="blend-ing">Orange · Apple · Carrot · Lime</div>
-                </div>
-            </div>
-
-            <div class="blend-card">
-                <img src="assets/bottle-ib.png" alt="Immunity Boost">
-                <div class="blend-info">
-                    <div class="blend-name">Immunity Boost</div>
-                    <div class="blend-sub">Bottled sunshine with a kick</div>
-                    <div class="blend-ing">Orange · Carrot · Lime · Ginger</div>
-                </div>
-            </div>
-
-            <div class="blend-card">
-                <img src="assets/bottle-dx.png" alt="Detox">
-                <div class="blend-info">
-                    <div class="blend-name">Detox</div>
-                    <div class="blend-sub">Green hydration</div>
-                    <div class="blend-ing">Celery · Cucumber · Apple · Lime</div>
-                </div>
-            </div>
-        </section>
-
-        <div class="fulfillment">
-            <p>Sunday pickup in London · Local delivery available</p>
-        </div>
-
-        <section class="order-section" id="order">
-            <h2 class="order-title">Pre-order</h2>
-            <form class="form" id="orderForm" action="https://formsubmit.co/muffinbott3@gmail.com" method="POST">
-
+            <!-- Order details -->
+            <section class="order-form">
                 <div class="field">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required placeholder="Sarah">
                 </div>
-
                 <div class="field">
                     <label for="phone">Phone / WhatsApp</label>
                     <input type="tel" id="phone" name="phone" required placeholder="07xxx xxxxxx">
                 </div>
-
-                <div class="field">
-                    <label>Blends</label>
-                    <div class="blend-picks">
-                        <label class="blend-pick">
-                            <input type="checkbox" name="blends" value="Liver & Kidney">
-                            <img src="assets/bottle-kl.png" alt="">
-                            <span>K&L</span>
-                        </label>
-                        <label class="blend-pick">
-                            <input type="checkbox" name="blends" value="Skin Boost">
-                            <img src="assets/bottle-sb.png" alt="">
-                            <span>Skin</span>
-                        </label>
-                        <label class="blend-pick">
-                            <input type="checkbox" name="blends" value="Immunity Boost">
-                            <img src="assets/bottle-ib.png" alt="">
-                            <span>Immunity</span>
-                        </label>
-                        <label class="blend-pick">
-                            <input type="checkbox" name="blends" value="Detox">
-                            <img src="assets/bottle-dx.png" alt="">
-                            <span>Detox</span>
-                        </label>
-                    </div>
-                </div>
-
                 <div class="row-2">
                     <div class="field">
                         <label for="qty">Bottles</label>
@@ -475,7 +351,6 @@
                         </select>
                     </div>
                 </div>
-
                 <div class="field">
                     <label for="notes">Notes</label>
                     <textarea id="notes" name="notes" rows="2" placeholder="Postcode for delivery, special requests…"></textarea>
@@ -487,19 +362,21 @@
                 <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
                 <button type="submit" class="btn-submit" id="submitBtn">Place pre-order →</button>
-            </form>
+            </section>
+        </form>
 
-            <div class="form-done" id="formDone">
-                <h3>Order received ✓</h3>
-                <p>We'll confirm via WhatsApp. See you Sunday!</p>
-            </div>
-        </section>
-
-        <div class="wa-section">
-            <a href="https://wa.me/447974574637?text=Hi!%20I'd%20like%20to%20pre-order%20Vita%20Press%20juice%20🧃" class="btn-wa" target="_blank" rel="noopener">
-                Or message us on WhatsApp
-            </a>
+        <div class="form-done" id="formDone">
+            <h3>Order received ✓</h3>
+            <p>We'll confirm via WhatsApp. See you Sunday!</p>
         </div>
+
+        <div class="fulfillment">
+            <p>Sunday pickup in London · Local delivery available</p>
+        </div>
+
+        <a href="https://wa.me/447974574637?text=Hi!%20I'd%20like%20to%20pre-order%20Vita%20Press%20juice%20🧃" class="btn-wa" target="_blank" rel="noopener">
+            Or message us on WhatsApp
+        </a>
 
         <div class="socials">
             <a href="https://www.tiktok.com/@vita_press" class="social-pill" target="_blank" rel="noopener">TikTok</a>
@@ -513,11 +390,18 @@
     </div>
 
     <script>
-        document.getElementById('ctaScroll').addEventListener('click', e => {
-            e.preventDefault();
-            document.getElementById('order').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Blend card toggle
+        document.querySelectorAll('.blend-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const cb = card.querySelector('input[type="checkbox"]');
+                // The label click already toggles the checkbox, just sync the class
+                requestAnimationFrame(() => {
+                    card.classList.toggle('selected', cb.checked);
+                });
+            });
         });
 
+        // Form submit
         const form = document.getElementById('orderForm');
         const btn = document.getElementById('submitBtn');
         const done = document.getElementById('formDone');
