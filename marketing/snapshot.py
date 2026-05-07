@@ -6,10 +6,18 @@ Pulls user stats + per-video stats + new comments and:
 2. Appends new comments (with 🧃 / pre-order / postcode flags) to comments.csv
 3. Prints a digest suitable for Telegram delivery
 """
-import asyncio, csv, json, os, re, sys
+import asyncio, csv, json, os, re, sys, warnings
 from datetime import datetime, timezone
 from pathlib import Path
 
+# TikTokApi currently imports urllib3 v2, which emits a noisy LibreSSL warning on
+# macOS system Python. The scraper works; suppress the warning so cron/Telegram
+# digests contain only useful TikTok status.
+warnings.filterwarnings(
+    "ignore",
+    message=r"urllib3 v2 only supports OpenSSL 1\.1\.1\+",
+    category=Warning,
+)
 from TikTokApi import TikTokApi
 
 USERNAME = "vita_press"
@@ -29,8 +37,22 @@ CMT_HEADERS = ["snapshot_at", "video_id", "comment_id", "author", "text", "likes
 
 
 def load_ms_token():
-    cookies = json.loads(COOKIE_PATH.read_text())
-    return next(c["value"] for c in cookies if c["name"] == "msToken")
+    if not COOKIE_PATH.exists():
+        raise RuntimeError(
+            f"TikTok cookies not found at {COOKIE_PATH}. Refresh Chrome cookies before running the scraper."
+        )
+
+    try:
+        cookies = json.loads(COOKIE_PATH.read_text())
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"TikTok cookie file is not valid JSON: {COOKIE_PATH}") from exc
+
+    ms_token = next((c.get("value") for c in cookies if c.get("name") == "msToken" and c.get("value")), None)
+    if not ms_token:
+        raise RuntimeError(
+            f"TikTok cookies at {COOKIE_PATH} are missing msToken. Re-export cookies from logged-in Chrome."
+        )
+    return ms_token
 
 
 def ensure_csv(path, headers):
