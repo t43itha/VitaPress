@@ -1,0 +1,11 @@
+file '/private/tmp/VitaPress-main/tiktok/2026-05-14/day-7-reply-kidney-stones/01.png'
+duration 2.1
+file '/private/tmp/VitaPress-main/tiktok/2026-05-14/day-7-reply-kidney-stones/02.png'
+duration 2.1
+file '/private/tmp/VitaPress-main/tiktok/2026-05-14/day-7-reply-kidney-stones/03.png'
+duration 2.1
+file '/private/tmp/VitaPress-main/tiktok/2026-05-14/day-7-reply-kidney-stones/04.png'
+duration 2.3
+file '/private/tmp/VitaPress-main/tiktok/2026-05-14/day-7-reply-kidney-stones/05.png'
+duration 2.1
+file '/private/tmp/VitaPress-main/tiktok/2026-05-14/day-7-reply-kidney-stones/05.png'
