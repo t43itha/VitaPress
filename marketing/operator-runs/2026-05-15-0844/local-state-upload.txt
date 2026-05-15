@@ -1,0 +1,104 @@
+viewport: 1920x856
+page: 1920x856
+scroll: (0, 0)
+TikTok
+Upload
+<svg /> <!-- SVG content collapsed -->
+|scroll element|<iframe /> (scroll)
+<svg alt=TikTok /> <!-- SVG content collapsed -->
+TikTok
+Company
+About
+Newsroom
+Contact
+Careers
+Programmes
+TikTok for Good
+Advertise
+Sell on TikTok Shop
+TikTok LIVE Creator Networks
+Developers
+Transparency
+TikTok Embeds
+Support
+Help Centre
+Safety Centre
+Privacy Centre
+Creator Portal
+Community Guidelines
+Transparency
+Accessibility
+Legal
+Terms of Use
+Privacy Policy
+English (UK)
+<svg /> <!-- SVG content collapsed -->
+2026
+TikTok
+[556]<div id=:rh: role=dialog />
+	Create a passkey for an easier login
+	[562]<i />
+		<svg /> <!-- SVG content collapsed -->
+	Use your face, fingerprint, PIN or a security key for a quicker and safer login.
+	[568]<i />
+		<svg /> <!-- SVG content collapsed -->
+	You won’t have to worry about forgetting or resetting passwords.
+	[575]<i />
+		<svg /> <!-- SVG content collapsed -->
+	Passkeys are safer than passwords because they can’t be guessed by others.
+	[56]<button />
+		Maybe later
+	[57]<button />
+		Create passkey
+viewport: 1920x856
+page: 1920x856
+scroll: (0, 0)
+[1263]<div id=root />
+	[1265]<button />
+	[1267]<button disabled=true />
+		Upload
+	Manage
+	[1271]<button />
+		Home
+	[1274]<button />
+		Posts
+	[1277]<button />
+		View analytics
+	[1280]<button />
+		Comments
+	Tools
+	[1283]<button />
+		Inspiration
+	[1286]<button />
+		Monetisation
+	[1252]<button />
+		Creator Academy
+	[1253]<button />
+		Unlimited Sounds
+	Others
+	[1294]<button />
+		Share feedback
+	[1669]<a />
+		Back to TikTok
+	[1300]<div />
+		[1696]<div role=button />
+			|SHADOW(open)|*[1301]<input type=file accept=video/* compound_components=(name=Browse Files,role=button),(name=File Selected,role=textbox,current=None) />
+			Select video to upload
+			Or drag and drop it here
+			[1302]<button aria-label=Select video />
+				Select video
+			Size and duration
+			Maximum size: 30 GB, video duration: 60 minutes.
+			File formats
+			Recommended: “.mp4”. Other major formats are supported.
+			Video resolutions
+			High-resolution recommended: 1080p, 1440p, 4K.
+			Aspect ratios
+			Recommended: 16:9 for landscape, 9:16 for vertical.
+		Create high-quality videos on CapCut Online
+		Automatically shorten your videos and create videos from scripts with AI-powered features.
+		[1303]<button />
+			Try now
+[1307]<div id=:re: role=tooltip />
+	Use these sounds to prevent your 1 Minute+ videos from being muted. Unlimited sounds have no limit on usage duration.
+	<svg /> <!-- SVG content collapsed -->

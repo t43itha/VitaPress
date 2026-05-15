@@ -1,0 +1,13 @@
+file '/private/tmp/VitaPress-main/tiktok/2026-05-15/day-8-price-poll/01.png'
+duration 1.9
+file '/private/tmp/VitaPress-main/tiktok/2026-05-15/day-8-price-poll/02.png'
+duration 1.9
+file '/private/tmp/VitaPress-main/tiktok/2026-05-15/day-8-price-poll/03.png'
+duration 1.9
+file '/private/tmp/VitaPress-main/tiktok/2026-05-15/day-8-price-poll/04.png'
+duration 1.9
+file '/private/tmp/VitaPress-main/tiktok/2026-05-15/day-8-price-poll/05.png'
+duration 1.9
+file '/private/tmp/VitaPress-main/tiktok/2026-05-15/day-8-price-poll/06.png'
+duration 1.9
+file '/private/tmp/VitaPress-main/tiktok/2026-05-15/day-8-price-poll/06.png'

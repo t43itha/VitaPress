@@ -1,0 +1,172 @@
+viewport: 1920x856
+page: 1920x856
+scroll: (0, 0)
+[120]<div id=root />
+	[122]<button />
+	[124]<button disabled=true />
+		Upload
+	Manage
+	[128]<button />
+		Home
+	[131]<button />
+		Posts
+	[134]<button />
+		View analytics
+	[137]<button />
+		Comments
+	Tools
+	[140]<button />
+		Inspiration
+	[1075]<button />
+		Monetisation
+	[143]<button />
+		Creator Academy
+	[146]<button />
+		Unlimited Sounds
+	Others
+	[150]<button />
+		Share feedback
+	[464]<a />
+		Back to TikTok
+	|scroll element|<div /> (0.0 pages above, 0.9 pages below)
+		[5037]<div />
+			Honest question for London would you pay £3.50 for fresh cold pressed juice Comment A B C D plus your area Link in bio.mp4
+			[5414]<div />
+				[5412]<div />
+					1080P
+			[5972]<span role=img />
+				[5962]<svg role=img /> <!-- SVG content collapsed -->
+			Uploaded（583.43KB）
+			[5974]<button aria-label=Replace />
+				Replace
+			Details
+			Description
+			[5449]<div />
+				[5429]<div aria-autocomplete=list contenteditable=true role=combobox expanded=false />
+					Honest question for London would you pay £3.50 for fresh cold pressed juice Comment A B C D plus your area Link in bio
+				[5435]<button aria-label=Hashtag id=web-creation-caption-hashtag-button />
+					Hashtags
+				[5439]<button aria-label=@mention id=web-creation-caption-mention-button />
+					Mention
+				[5442]<span />
+					118
+				[5444]<span />
+					4000
+			Cover
+			[5456]<div />
+				[5455]<span />
+					[5454]<span role=img />
+						[5453]<svg role=img /> <!-- SVG content collapsed -->
+			[5460]<div />
+				[5908]<img />
+				[5458]<div />
+					Edit cover
+			Location
+			[5947]<div />
+				[5946]<span />
+					[5945]<span role=img />
+						[5944]<svg role=img /> <!-- SVG content collapsed -->
+			[5473]<button role=combobox expanded=false />
+				|SHADOW(open)|[5467]<input role=input type=text placeholder=Search locations />
+			[5913]<div />
+				Great Britain
+			[5914]<div />
+				Bromley Common
+			[5915]<div />
+				Central London rooms EC1V
+			[5916]<div />
+				London Choice - Knightsbridge - Harrod's
+			[5917]<div />
+				Taste of London
+			[5918]<div />
+				Aldgate East
+			[5919]<div />
+				Sutton Green
+			Settings
+			When to post
+			[5493]<label />
+				[5483]<span />
+					[5482]<span />
+				[5484]<span />
+					Now
+			[5494]<label />
+				[5487]<span />
+					[5486]<span />
+				[5488]<span />
+					Schedule
+			[5495]<div />
+				[5492]<span />
+					[5491]<span role=img />
+						[5490]<svg role=img /> <!-- SVG content collapsed -->
+			Who can see this post
+			[5505]<button role=combobox expanded=false />
+				Everyone
+			High-quality uploads
+			[5517]<div />
+				[5511]<span />
+					[5510]<span role=img />
+						[5509]<svg role=img /> <!-- SVG content collapsed -->
+			[5514]<div aria-checked=true data-state=checked />
+				[5512]<span data-state=checked />
+			HD by default when you post from Web Studio
+			[5582]<div />
+				[5579]<div />
+					[5577]<span />
+						Show more
+					[5578]<span role=img />
+						[5576]<svg role=img /> <!-- SVG content collapsed -->
+			Checks
+			Content check lite
+			[5592]<div />
+				[5586]<span />
+					[5585]<span role=img />
+						[5584]<svg role=img /> <!-- SVG content collapsed -->
+			[5589]<div aria-checked=true data-state=checked />
+				[5587]<span data-state=checked />
+			[5614]<div />
+				<svg /> <!-- SVG content collapsed -->
+			No issues found. However, your video could still be removed later if it violates our Community Guidelines.
+			[5639]<div />
+				Feed
+			[5640]<div />
+				Profile
+			[5641]<div />
+				Web
+			[5654]<button />
+			[5893]<div />
+				[5889]<span />
+					[5870]<div />
+						[5869]<div />
+				[5875]<div />
+					[5872]<svg /> <!-- SVG content collapsed -->
+				00:00:00
+				[5874]<span />
+				00:00:13
+				[5884]<div />
+					[5879]<svg /> <!-- SVG content collapsed -->
+				[5885]<div />
+					[5882]<svg /> <!-- SVG content collapsed -->
+			[5699]<div />
+				[5697]<img />
+				[5698]<img />
+			[5701]<div />
+			vita_press
+			Honest question for London would you pay £3.50 for fresh cold pressed juice Comment A B C D plus your area Link in bio
+			[5708]<div />
+				<svg /> <!-- SVG content collapsed -->
+			Original sound
+			vita_press
+			Original sound
+			vita_press
+			[5727]<button />
+				Edit
+			[5731]<button />
+				Sounds
+			[5735]<button />
+				Text
+			[5760]<button />
+				Post
+			[5761]<button />
+				Save draft
+			[5762]<button />
+				Discard

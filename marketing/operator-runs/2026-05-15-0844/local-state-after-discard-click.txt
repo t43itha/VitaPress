@@ -1,0 +1,128 @@
+viewport: 1920x856
+page: 1920x856
+scroll: (0, 0)
+Upload
+Manage
+Home
+Posts
+View analytics
+Comments
+Tools
+Inspiration
+Monetisation
+Creator Academy
+Unlimited Sounds
+Others
+Share feedback
+Back to TikTok
+|scroll element|<div /> (0.9 pages above, 0.0 pages below)
+	[1300]<div />
+		vita-press-day8-price-poll.mp4
+		[1818]<div />
+			[1816]<div />
+				1080P
+		[2421]<span role=img />
+			[2411]<svg role=img /> <!-- SVG content collapsed -->
+		Uploaded（583.43KB）
+		[2423]<button aria-label=Replace />
+			Replace
+		Details
+		Description
+		[1853]<div />
+			[1833]<div aria-autocomplete=list aria-expanded=false contenteditable=true role=combobox />
+				Honest question for London: would you pay £3.50 for a fresh cold-pressed juice from a tiny local batch?
+
+Comment A/B/C/D + your area if you want Sunday pickup or local London delivery. Link in bio to pre-order.
+
+#coldpressedjuice #londonsmallbusiness #juicetok #smallbusinessuk #londonfood #vitapress
+			[1839]<button aria-label=Hashtag id=web-creation-caption-hashtag-button />
+				Hashtags
+			[1843]<button aria-label=@mention id=web-creation-caption-mention-button />
+				Mention
+			[1846]<span />
+				629
+			[1848]<span />
+				4000
+		Cover
+		[1860]<div />
+			[1859]<span />
+				[1858]<span role=img />
+					[1857]<svg role=img /> <!-- SVG content collapsed -->
+		[1864]<div />
+			[2356]<img />
+			[1862]<div />
+				Edit cover
+		Location
+		<svg role=img /> <!-- SVG content collapsed -->
+		Bromley Common
+		Diva
+		McDonald's
+		Likkle 'd'
+		Taste of London
+		London Choice - Knightsbridge - Harrod's
+		Aldgate East
+		Settings
+		When to post
+		Now
+		Schedule
+		<svg role=img /> <!-- SVG content collapsed -->
+		Who can see this post
+		Everyone
+		High-quality uploads
+		<svg role=img /> <!-- SVG content collapsed -->
+		HD by default when you post from Web Studio
+		Show more
+		<svg role=img /> <!-- SVG content collapsed -->
+		Checks
+		Content check lite
+		<svg role=img /> <!-- SVG content collapsed -->
+		<svg /> <!-- SVG content collapsed -->
+		No issues found. However, your video could still be removed later if it violates our Community Guidelines.
+		[2044]<div />
+			Feed
+		[2045]<div />
+			Profile
+		[2046]<div />
+			Web
+		[2059]<button />
+		[2340]<div />
+			<svg /> <!-- SVG content collapsed -->
+			00:00:00
+			00:00:13
+			<svg /> <!-- SVG content collapsed -->
+			<svg /> <!-- SVG content collapsed -->
+		[2103]<div />
+			[2101]<img />
+			[2102]<img />
+		vita_press
+		vita-press-day8-price-pollHonest question for London: would you pay £3.50 for a fresh cold-pressed juice from a tiny local batch?
+
+
+
+Comment A/B/C/D + your area if you want Sunday pickup or local London delivery. Link in bio to pre-order.
+
+
+
+#coldpressedjuice #londonsmallbusiness #juicetok #smallbusinessuk #londonfood #vitapresHonest question for London: would you pay £3.50 for a fresh cold-pressed juice from a tiny local batch?
+
+Comment A/B/C/D + your area if you want Sunday pickup or local London delivery. Link in bio to pre-order.
+
+#coldpressedjuice #londonsmallbusiness #juicetok #smallbusinessuk #londonfood #vitapress
+		<svg /> <!-- SVG content collapsed -->
+		Original sound
+		vita_press
+		Original sound
+		vita_press
+		Edit
+		Sounds
+		Text
+		Post
+		Save draft
+		Discard
+[2577]<div id=:r6g: role=dialog title=Discard this post? />
+	Discard this post?
+	The video and all edits will be discarded.
+	[2571]<button />
+		Continue editing
+	[2572]<button />
+		Discard

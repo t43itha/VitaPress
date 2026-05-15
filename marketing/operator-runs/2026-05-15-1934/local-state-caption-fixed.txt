@@ -1,0 +1,136 @@
+viewport: 1920x856
+page: 1920x1174
+scroll: (0, 0)
+Upload
+Manage
+Home
+Posts
+View analytics
+Comments
+Tools
+Inspiration
+Monetisation
+Creator Academy
+Unlimited Sounds
+Others
+Share feedback
+Back to TikTok
+|scroll element|<div /> (0.0 pages above, 1.0 pages below)
+	[117]<div />
+		vita-press-day9-batch-reality.mp4
+		1080P
+		<svg role=img /> <!-- SVG content collapsed -->
+		Uploaded（543.87KB）
+		Replace
+		Details
+		Description
+		|scroll element|<div /> (0.0 pages above, 0.1 pages below)
+			TikTok humbled this tiny juice launch, so tomorrow's content is getting built by comments instead of fake wellness hooks.
+			Pick the next proof video:
+			A = batch prep chaos
+			B = taste test reactions
+			C = ingredient shop receipt
+			D = packing Sunday orders
+			Comment A/B/C/D + your area if you want Sunday pickup or local London delivery. Link in bio to pre-order.
+			#coldpressedjuice #londonsmallbusiness #smallbusinessuk #londonfood #juicetok #vitapress
+		Hashtags
+		Mention
+		485
+		4000
+		Cover
+		<svg role=img /> <!-- SVG content collapsed -->
+		Edit cover
+		Location
+		<svg role=img /> <!-- SVG content collapsed -->
+		Bromley Common
+		McDonald's
+		Aldgate East
+		London Choice - Knightsbridge - Harrod's
+		Likkle 'd'
+		NW10
+		Taste of London
+		Kirk's Home Bakery
+		Settings
+		When to post
+		Now
+		Schedule
+		<svg role=img /> <!-- SVG content collapsed -->
+		Who can see this post
+		[1474]<button role=combobox expanded=false />
+			Everyone
+		High-quality uploads
+		[1486]<div />
+			[1480]<span />
+				[1479]<span role=img />
+					[1478]<svg role=img /> <!-- SVG content collapsed -->
+		[1483]<div aria-checked=true data-state=checked />
+			[1481]<span data-state=checked />
+		HD by default when you post from Web Studio
+		[1551]<div />
+			[1548]<div />
+				[1546]<span />
+					Show more
+				[1547]<span role=img />
+					[1545]<svg role=img /> <!-- SVG content collapsed -->
+		Checks
+		Content check lite
+		[1561]<div />
+			[1555]<span />
+				[1554]<span role=img />
+					[1553]<svg role=img /> <!-- SVG content collapsed -->
+		[1558]<div aria-checked=true data-state=checked />
+			[1556]<span data-state=checked />
+		[1583]<div />
+			<svg /> <!-- SVG content collapsed -->
+		No issues found. However, your video could still be removed later if it violates our Community Guidelines.
+		Feed
+		Profile
+		Web
+		<svg /> <!-- SVG content collapsed -->
+		00:00:00
+		00:00:15
+		<svg /> <!-- SVG content collapsed -->
+		<svg /> <!-- SVG content collapsed -->
+		vita_press
+		vita-press-day9-batch-realityTikTok humbled this tiny juice launch, so tomorrow's content is getting built by comments instead of fake wellness hooks.
+
+
+
+Pick the next proof video:
+
+A = batch prep chaos
+
+B = taste test reactions
+
+C = ingredient shop receipt
+
+D = packing Sunday orders
+
+
+
+Comment A/B/C/D + your area if you want Sunday pickup or local London delivery. Link in bio to pre-order.
+
+
+
+#coldpressedjuice #londonsmallbusiness #smallbusinessuk #londonfood #juicetok #vitapress
+		<svg /> <!-- SVG content collapsed -->
+		Original sound
+		vita_press
+		Original sound
+		vita_press
+		Edit
+		Sounds
+		Text
+		[1728]<button />
+			Post
+		[1729]<button />
+			Save draft
+		[1730]<button />
+			Discard
+New editing features added
+Now it's easier than ever before to create professional and engaging videos.
+[1835]<button />
+	Got it
+<svg /> <!-- SVG content collapsed -->
+[1871]<div role=presentation />
+	[1995]<div />

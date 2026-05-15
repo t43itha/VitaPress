@@ -1,0 +1,329 @@
+viewport: 1920x856
+page: 1920x856
+scroll: (0, 0)
+[120]<div id=root />
+	[122]<button />
+	[124]<button />
+		Upload
+	Manage
+	[128]<button />
+		Home
+	[131]<button />
+		Posts
+	[134]<button />
+		View analytics
+	[137]<button />
+		Comments
+	Tools
+	[140]<button />
+		Inspiration
+	[1075]<button />
+		Monetisation
+	[143]<button />
+		Creator Academy
+	[146]<button />
+		Unlimited Sounds
+	Others
+	[150]<button />
+		Share feedback
+	[464]<a />
+		Back to TikTok
+	[6145]<div />
+		[6142]<span />
+			[6141]<div />
+				Posts 5
+	[6146]<div />
+		[6144]<span />
+			[6143]<div />
+				Drafts 1
+	[6155]<div />
+		[6153]<div />
+			[6152]<span role=img />
+				[6151]<svg role=img /> <!-- SVG content collapsed -->
+		[6154]<span />
+			Views
+	[6164]<div />
+		[6162]<div />
+			[6161]<span role=img />
+				[6160]<svg role=img /> <!-- SVG content collapsed -->
+		[6163]<span />
+			Likes
+	[6173]<div />
+		[6171]<div />
+			[6170]<span role=img />
+				[6169]<svg role=img /> <!-- SVG content collapsed -->
+		[6172]<span />
+			Comments
+	[6182]<div />
+		[6180]<div />
+			[6179]<span role=img />
+				[6178]<svg role=img /> <!-- SVG content collapsed -->
+		[6181]<span />
+			Privacy
+	[6197]<div />
+		[6196]<div />
+			<svg /> <!-- SVG content collapsed -->
+	|SHADOW(open)|[6198]<input type=text id=:rjq: placeholder=Search for post description />
+	[6218]<button />
+		Content (Created on)
+	[6220]<div />
+		[6219]<span />
+			Privacy
+	[6232]<button />
+		Views
+		[6227]<div />
+			[6223]<span role=img />
+				[6222]<svg role=img /> <!-- SVG content collapsed -->
+		[6228]<div />
+			[6226]<span role=img />
+				[6225]<svg role=img /> <!-- SVG content collapsed -->
+	[6245]<button />
+		Likes
+		[6240]<div />
+			[6236]<span role=img />
+				[6235]<svg role=img /> <!-- SVG content collapsed -->
+		[6241]<div />
+			[6239]<span role=img />
+				[6238]<svg role=img /> <!-- SVG content collapsed -->
+	[6258]<button />
+		Comments
+		[6253]<div />
+			[6249]<span role=img />
+				[6248]<svg role=img /> <!-- SVG content collapsed -->
+		[6254]<div />
+			[6252]<span role=img />
+				[6251]<svg role=img /> <!-- SVG content collapsed -->
+	[6266]<div />
+		[6265]<span />
+			Actions
+	[6846]<div />
+		[6842]<picture />
+			[6833]<img />
+		[6843]<div />
+			[6834]<div />
+			[6838]<div />
+				[6836]<div />
+					[6835]<span />
+						00:13
+		[6841]<svg /> <!-- SVG content collapsed -->
+		[6845]<div />
+	[6847]<a />
+		Honest question for London would you pay £3.50 for fresh cold pressed juice Comment A B C D plus your area Link in bio
+	[6975]<div />
+		[6961]<div />
+			[6958]<span role=img />
+				[6955]<svg role=img /> <!-- SVG content collapsed -->
+			[6959]<span />
+				Content under review
+			[6960]<span role=img />
+				[6957]<svg role=img /> <!-- SVG content collapsed -->
+	[6875]<div />
+		[6874]<button />
+			Private
+	[6920]<div />
+		[6897]<div />
+			[6896]<div />
+				[6895]<span role=img />
+					[6894]<svg role=img /> <!-- SVG content collapsed -->
+	[6921]<div />
+		[6904]<div />
+			[6903]<div />
+				[6902]<span role=img />
+					[6901]<svg role=img /> <!-- SVG content collapsed -->
+	[6922]<div />
+		[6910]<div />
+			[6909]<div />
+				[6908]<span role=img />
+					[6907]<svg role=img /> <!-- SVG content collapsed -->
+	[6923]<div aria-expanded=false />
+		[6919]<div />
+			[6918]<button />
+	[6285]<div />
+		[6281]<picture />
+			[6271]<source />
+			[6272]<img />
+		[6282]<div />
+			[6273]<div />
+			[6277]<div />
+				[6275]<div />
+					[6274]<span />
+						00:14
+		[6280]<svg /> <!-- SVG content collapsed -->
+		[6284]<div />
+	[6286]<a />
+		TikTok humbled this juice launch
+	15 May, 1:21 pm
+	[6306]<div />
+		[6305]<button />
+			Public
+	[6312]<span />
+		136
+	[6351]<div />
+		[6328]<div />
+			[6327]<div />
+				[6326]<span role=img />
+					[6325]<svg role=img /> <!-- SVG content collapsed -->
+	[6352]<div />
+		[6335]<div />
+			[6334]<div />
+				[6333]<span role=img />
+					[6332]<svg role=img /> <!-- SVG content collapsed -->
+	[6353]<div />
+		[6341]<div />
+			[6340]<div />
+				[6339]<span role=img />
+					[6338]<svg role=img /> <!-- SVG content collapsed -->
+	[6354]<div aria-expanded=false />
+		[6350]<div />
+			[6349]<button />
+	[6375]<div />
+		[6371]<picture />
+			[6361]<source />
+			[6362]<img />
+		[6372]<div />
+			[6363]<div />
+			[6367]<div />
+				[6365]<div />
+					[6364]<span />
+						00:12
+		[6370]<svg /> <!-- SVG content collapsed -->
+		[6374]<div />
+	[6376]<a />
+		Fair pushback — moving away from fake wellness claims and showing the real product instead. Vita Press is cold-pressed juice made from food ingredients. Not medical advice, not a cure, and not a replacement for professional health advice. £3.50 each · 3 for £10 · London launch batch. Comment 🧃 to pre-order — Sunday pickup or local London delivery. Link in bio. #VitaPress #LondonSmallBusiness #ColdPressedJuice #SmallBusinessUK #LondonFood #BuildInPublic #FoodBusiness#VitaPress #LondonSmallBusiness #ColdPressedJuice #SmallBusinessUK #LondonFood #BuildInPublic #FoodBusiness
+	15 May, 6:41 am
+	[6396]<div />
+		[6395]<button />
+			Public
+	[6402]<span />
+		254
+	[6441]<div />
+		[6418]<div />
+			[6417]<div />
+				[6416]<span role=img />
+					[6415]<svg role=img /> <!-- SVG content collapsed -->
+	[6442]<div />
+		[6425]<div />
+			[6424]<div />
+				[6423]<span role=img />
+					[6422]<svg role=img /> <!-- SVG content collapsed -->
+	[6443]<div />
+		[6431]<div />
+			[6430]<div />
+				[6429]<span role=img />
+					[6428]<svg role=img /> <!-- SVG content collapsed -->
+	[6444]<div aria-expanded=false />
+		[6440]<div />
+			[6439]<button />
+	[6542]<div />
+		[6538]<picture />
+			[6526]<img />
+		[6539]<div />
+			[6527]<div />
+			[6534]<div />
+				[6532]<div />
+					[6531]<span role=img />
+						[6530]<svg role=img /> <!-- SVG content collapsed -->
+		[6537]<svg /> <!-- SVG content collapsed -->
+		[6541]<div />
+	[6543]<a />
+		My nutritionist told me to drink this every morning 😭 I've been struggling with energy and my PT recommended I try cold-pressed juice instead of synthetic pre-workout. So I found Vita Press — they make fresh cold-pressed juice every Sunday in London with proper ingredient weights (129g beetroot, 125g carrot, 129g apple, 27g ginger per 250ml bottle). I tried the Liver & Kidney blend and honestly?? The difference is wild. No jitters, no crash, just actual sustained energy. Plus it's £3.50 vs £35 for a tub of powder. Comment 🧃 to pre-order — Sunday pickup or local London delivery.#coldpressedjuice #beetrootjuice #preworkout #londonwellness #vitapress
+	7 May, 8:02 am
+	[6563]<div />
+		[6562]<button />
+			Public
+	[6569]<span />
+		242
+	[6571]<span />
+		17
+	[6608]<div />
+		[6585]<div />
+			[6584]<div />
+				[6583]<span role=img />
+					[6582]<svg role=img /> <!-- SVG content collapsed -->
+	[6609]<div />
+		[6592]<div />
+			[6591]<div />
+				[6590]<span role=img />
+					[6589]<svg role=img /> <!-- SVG content collapsed -->
+	[6610]<div />
+		[6598]<div />
+			[6597]<div />
+				[6596]<span role=img />
+					[6595]<svg role=img /> <!-- SVG content collapsed -->
+	[6611]<div aria-expanded=false />
+		[6607]<div />
+			[6606]<button />
+	[6637]<div />
+		[6633]<picture />
+			[6621]<img />
+		[6634]<div />
+			[6622]<div />
+			[6629]<div />
+				[6627]<div />
+					[6626]<span role=img />
+						[6625]<svg role=img /> <!-- SVG content collapsed -->
+		[6632]<svg /> <!-- SVG content collapsed -->
+		[6636]<div />
+	[6638]<a />
+		What's actually in your £3.50 juice? 😭 I've been struggling with energy and my PT recommended I try cold-pressed juice instead of synthetic pre-workout. So I found Vita Press — they make fresh cold-pressed juice every Sunday in London with proper ingredient weights (129g beetroot, 125g carrot, 129g apple, 27g ginger per 250ml bottle). I tried the Liver & Kidney blend and honestly?? The difference is wild. No jitters, no crash, just actual sustained energy. Plus it's £3.50 vs £35 for a tub of powder. Comment 🧃 to pre-order — Sunday pickup or local London delivery. #coldpressedjuice #beetrootjuice #preworkout #londonwellness
+	6 May, 8:06 am
+	[6658]<div />
+		[6657]<button />
+			Public
+	[6664]<span />
+		281
+	[6703]<div />
+		[6680]<div />
+			[6679]<div />
+				[6678]<span role=img />
+					[6677]<svg role=img /> <!-- SVG content collapsed -->
+	[6704]<div />
+		[6687]<div />
+			[6686]<div />
+				[6685]<span role=img />
+					[6684]<svg role=img /> <!-- SVG content collapsed -->
+	[6705]<div />
+		[6693]<div />
+			[6692]<div />
+				[6691]<span role=img />
+					[6690]<svg role=img /> <!-- SVG content collapsed -->
+	[6706]<div aria-expanded=false />
+		[6702]<div />
+			[6701]<button />
+	[6732]<div />
+		[6728]<picture />
+			[6716]<img />
+		[6729]<div />
+			[6717]<div />
+			[6724]<div />
+				[6722]<div />
+					[6721]<span role=img />
+						[6720]<svg role=img /> <!-- SVG content collapsed -->
+		[6727]<svg /> <!-- SVG content collapsed -->
+		[6731]<div />
+	[6733]<a />
+		My PT said replace pre-workout with this £3.50 bottle 😭 I've been struggling with energy and my PT recommended I try cold-pressed juice instead of synthetic pre-workout. So I found Vita Press — they make fresh cold-pressed juice every Sunday in London with proper ingredient weights (129g beetroot, 125g carrot, 129g apple, 27g ginger per 250ml bottle). I tried the Liver & Kidney blend and honestly?? The difference is wild. No jitters, no crash, just actual sustained energy. Plus it's £3.50 vs £35 for a tub of powder. Comment 🧃 to pre-order — Sunday pickup or local London delivery. #coldpressedjuice #beetrootjuice #preworkout #londonwellness #vitapress
+	5 May, 6:10 pm
+	[6753]<div />
+		[6752]<button />
+			Public
+	[6759]<span />
+		283
+	[6798]<div />
+		[6775]<div />
+			[6774]<div />
+				[6773]<span role=img />
+					[6772]<svg role=img /> <!-- SVG content collapsed -->
+	[6799]<div />
+		[6782]<div />
+			[6781]<div />
+				[6780]<span role=img />
+					[6779]<svg role=img /> <!-- SVG content collapsed -->
+	[6800]<div />
+		[6788]<div />
+			[6787]<div />
+				[6786]<span role=img />
+					[6785]<svg role=img /> <!-- SVG content collapsed -->
+	[6801]<div aria-expanded=false />
+		[6797]<div />
+			[6796]<button />
