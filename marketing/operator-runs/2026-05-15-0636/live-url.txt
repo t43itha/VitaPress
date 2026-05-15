@@ -1,0 +1,4 @@
+cloud live URL used during initial check:
+https://live.browser-use.com/?wss=wss%3A%2F%2Fe3a26c29-b31e-4f42-8bdc-041a6c09ab6a.free-cdp0.browser-use.com%2Fdevtools%2Fbrowser%2Fd6490d48-a032-4e3f-b51c-26ab53cd10b1
+
+local headed browser-use session: vita-local
