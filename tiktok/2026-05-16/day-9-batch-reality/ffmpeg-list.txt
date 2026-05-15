@@ -1,0 +1,13 @@
+file '/private/tmp/VitaPress-main/tiktok/2026-05-16/day-9-batch-reality/01.png'
+duration 2.1
+file '/private/tmp/VitaPress-main/tiktok/2026-05-16/day-9-batch-reality/02.png'
+duration 2.1
+file '/private/tmp/VitaPress-main/tiktok/2026-05-16/day-9-batch-reality/03.png'
+duration 2.1
+file '/private/tmp/VitaPress-main/tiktok/2026-05-16/day-9-batch-reality/04.png'
+duration 2.1
+file '/private/tmp/VitaPress-main/tiktok/2026-05-16/day-9-batch-reality/05.png'
+duration 2.1
+file '/private/tmp/VitaPress-main/tiktok/2026-05-16/day-9-batch-reality/06.png'
+duration 2.1
+file '/private/tmp/VitaPress-main/tiktok/2026-05-16/day-9-batch-reality/06.png'
