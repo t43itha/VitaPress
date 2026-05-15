@@ -1,0 +1,109 @@
+viewport: 1920x856
+page: 1920x1174
+scroll: (0, 0)
+Upload
+Manage
+Home
+Posts
+View analytics
+Comments
+Tools
+Inspiration
+Monetisation
+Creator Academy
+Unlimited Sounds
+Others
+Share feedback
+Back to TikTok
+|scroll element|<div /> (0.7 pages above, 0.2 pages below)
+	[3125]<div />
+		TikTok humbled this tiny juice launch Pick A batch prep B taste tests C receipts D packing orders Comment A B C D plus your area Link in bio.mp4
+		[4231]<div />
+			[4229]<div />
+				1080P
+		[4836]<span role=img />
+			[4826]<svg role=img /> <!-- SVG content collapsed -->
+		Uploaded（543.87KB）
+		[4838]<button aria-label=Replace />
+			Replace
+		Details
+		Description
+		[4266]<div />
+			[4246]<div aria-autocomplete=list contenteditable=true role=combobox expanded=false />
+				TikTok humbled this tiny juice launch Pick A batch prep B taste tests C receipts D packing orders Comment A B C D plus your area Link in bio
+			[4252]<button aria-label=Hashtag id=web-creation-caption-hashtag-button />
+				Hashtags
+			[4256]<button aria-label=@mention id=web-creation-caption-mention-button />
+				Mention
+			[4259]<span />
+				140
+			[4261]<span />
+				4000
+		Cover
+		[4273]<div />
+			[4272]<span />
+				[4271]<span role=img />
+					[4270]<svg role=img /> <!-- SVG content collapsed -->
+		[4277]<div />
+			[4811]<img />
+			Edit cover
+		Location
+		<svg role=img /> <!-- SVG content collapsed -->
+		Bromley Common
+		McDonald's
+		Aldgate East
+		London Choice - Knightsbridge - Harrod's
+		Likkle 'd'
+		NW10
+		Taste of London
+		Kirk's Home Bakery
+		Settings
+		When to post
+		Now
+		Schedule
+		<svg role=img /> <!-- SVG content collapsed -->
+		Who can see this post
+		Everyone
+		High-quality uploads
+		<svg role=img /> <!-- SVG content collapsed -->
+		HD by default when you post from Web Studio
+		Show more
+		<svg role=img /> <!-- SVG content collapsed -->
+		Checks
+		Content check lite
+		<svg role=img /> <!-- SVG content collapsed -->
+		<svg /> <!-- SVG content collapsed -->
+		No issues found. However, your video could still be removed later if it violates our Community Guidelines.
+		[4485]<div />
+			Feed
+		[4486]<div />
+			Profile
+		[4487]<div />
+			Web
+		[4500]<button />
+		[4795]<div />
+			<svg /> <!-- SVG content collapsed -->
+			00:00:00
+			00:00:15
+			<svg /> <!-- SVG content collapsed -->
+			<svg /> <!-- SVG content collapsed -->
+		vita_press
+		TikTok humbled this tiny juice launch Pick A batch prep B taste tests C receipts D packing orders Comment A B C D plus your area Link in bio
+		<svg /> <!-- SVG content collapsed -->
+		Original sound
+		vita_press
+		Original sound
+		vita_press
+		Edit
+		Sounds
+		Text
+		Post
+		Save draft
+		Discard
+New editing features added
+Now it's easier than ever before to create professional and engaging videos.
+[4729]<button />
+	Got it
+<svg /> <!-- SVG content collapsed -->
+[4763]<div role=presentation />
+	[4841]<div />

@@ -1,0 +1,48 @@
+viewport: 1512x770
+page: 1512x770
+scroll: (0, 0)
+[999]<div id=root />
+	[1025]<button />
+	[1035]<button disabled=true />
+		Upload
+	Manage
+	[1129]<button />
+		Home
+	[1130]<button />
+		Posts
+	[1131]<button />
+		Analytics
+	[1132]<button />
+		Comments
+	Tools
+	[1200]<button />
+		Inspiration
+	[2414]<button />
+		Monetization
+	[1201]<button />
+		Creator Academy
+	[1202]<button />
+		Unlimited Sounds
+	Others
+	[1229]<button />
+		Feedback
+	[1246]<a />
+		Back to TikTok
+	[2485]<div />
+		[2545]<div role=button />
+			|SHADOW(open)|*[2542]<input type=file accept=video/* compound_components=(name=Browse Files,role=button),(name=File Selected,role=textbox,current=None) />
+			Select video to upload
+			Or drag and drop it here
+			[2497]<button aria-label=Select video />
+			Size and duration
+			Maximum size: 30 GB, video duration: 60 minutes.
+			File formats
+			Recommended: “.mp4”. Other major formats are supported.
+			Video resolutions
+			High-resolution recommended: 1080p, 1440p, 4K.
+			Aspect ratios
+			Recommended: 16:9 for landscape, 9:16 for vertical.
+		Create high quality videos on CapCut Online
+		Automatically shorten your videos and create videos from scripts with AI-powered features.
+		[2659]<button />
+			Try now

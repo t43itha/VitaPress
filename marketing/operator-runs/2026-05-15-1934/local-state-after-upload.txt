@@ -1,0 +1,112 @@
+viewport: 1920x856
+page: 1920x1174
+scroll: (0, 0)
+Upload
+Manage
+Home
+Posts
+View analytics
+Comments
+Tools
+Inspiration
+Monetisation
+Creator Academy
+Unlimited Sounds
+Others
+Share feedback
+Back to TikTok
+|scroll element|<div /> (0.7 pages above, 0.2 pages below)
+	[117]<div />
+		vita-press-day9-batch-reality.mp4
+		[1383]<div />
+			[1381]<div />
+				1080P
+		[1988]<span role=img />
+			[1978]<svg role=img /> <!-- SVG content collapsed -->
+		Uploaded（543.87KB）
+		[1990]<button aria-label=Replace />
+			Replace
+		Details
+		Description
+		[1418]<div />
+			[1398]<div aria-autocomplete=list contenteditable=true role=combobox expanded=false />
+				vita-press-day9-batch-reality
+			[1404]<button aria-label=Hashtag id=web-creation-caption-hashtag-button />
+				Hashtags
+			[1408]<button aria-label=@mention id=web-creation-caption-mention-button />
+				Mention
+			[1411]<span />
+				29
+			[1413]<span />
+				4000
+		Cover
+		[1425]<div />
+			[1424]<span />
+				[1423]<span role=img />
+					[1422]<svg role=img /> <!-- SVG content collapsed -->
+		[1429]<div />
+			[1963]<img />
+			Edit cover
+		Location
+		<svg role=img /> <!-- SVG content collapsed -->
+		Bromley Common
+		McDonald's
+		Aldgate East
+		London Choice - Knightsbridge - Harrod's
+		Likkle 'd'
+		NW10
+		Taste of London
+		Kirk's Home Bakery
+		Settings
+		When to post
+		Now
+		Schedule
+		<svg role=img /> <!-- SVG content collapsed -->
+		Who can see this post
+		Everyone
+		High-quality uploads
+		<svg role=img /> <!-- SVG content collapsed -->
+		HD by default when you post from Web Studio
+		Show more
+		<svg role=img /> <!-- SVG content collapsed -->
+		Checks
+		Content check lite
+		<svg role=img /> <!-- SVG content collapsed -->
+		<svg /> <!-- SVG content collapsed -->
+		Checking in progress. This will take about 10 minutes. Longer videos may take more time.
+		[1608]<div />
+			Feed
+		[1609]<div />
+			Profile
+		[1610]<div />
+			Web
+		[1623]<button />
+		[1904]<div />
+			<svg /> <!-- SVG content collapsed -->
+			00:00:00
+			00:00:15
+			<svg /> <!-- SVG content collapsed -->
+			<svg /> <!-- SVG content collapsed -->
+		vita_press
+		vita-press-day9-batch-reality
+		<svg /> <!-- SVG content collapsed -->
+		Original sound
+		vita_press
+		Original sound
+		vita_press
+		Edit
+		Sounds
+		Text
+		Post
+		Save draft
+		Discard
+[125]<div id=:re: role=tooltip />
+	Use these sounds to prevent your 1 Minute+ videos from being muted. Unlimited sounds have no limit on usage duration.
+	<svg /> <!-- SVG content collapsed -->
+New editing features added
+Now it's easier than ever before to create professional and engaging videos.
+[1835]<button />
+	Got it
+<svg /> <!-- SVG content collapsed -->
+[1871]<div role=presentation />
+	[1993]<div />

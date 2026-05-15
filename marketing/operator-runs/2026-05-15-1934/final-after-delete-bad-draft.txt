@@ -1,0 +1,71 @@
+viewport: 1920x856
+page: 1920x856
+scroll: (0, 0)
+[4871]<div id=root />
+	[4872]<button />
+	[4874]<button />
+		Upload
+	Manage
+	[4878]<button />
+		Home
+	[4881]<button />
+		Posts
+	[4884]<button />
+		View analytics
+	[4887]<button />
+		Comments
+	Tools
+	[4890]<button />
+		Inspiration
+	[4893]<button />
+		Monetisation
+	[4861]<button />
+		Creator Academy
+	[4862]<button />
+		Unlimited Sounds
+	Others
+	[4901]<button />
+		Share feedback
+	[5230]<a />
+		Back to TikTok
+	[4907]<div />
+		[5254]<span />
+			[5255]<div />
+				Posts 6
+	[4908]<div />
+		[5257]<span />
+			[5258]<div />
+				Drafts 2
+	<svg /> <!-- SVG content collapsed -->
+	You can save up to 30 drafts. All drafts are only visible to you and accessible across computers. Drafts expire after 60 days and will be deleted permanently.
+	[5274]<span />
+		Drafts
+	Last update
+	[5280]<span />
+		Actions
+	[4909]<div />
+		[5294]<span />
+			00:14
+	TikTok humbled this tiny juice launch Pick A batch prep B taste tests C receipts D packing orders Comment A B C D plus your area Link in bio
+	15 May 2026, 7:41 pm
+	[4910]<button />
+	[4911]<button />
+	[4912]<button />
+	[4917]<div />
+		[5367]<span />
+			00:12
+	Replying to a fair comment…
+
+Fair pushback — this is exactly why we’re moving away from fake wellness claims and showing the real product instead.
+
+Vita Press is cold-pressed juice made from food ingredients. It is not medical advice, not a cure, and not a replacement for speaking to a professional if you have a health concern.
+
+£3.50 each · 3 for £10 · London launch batch.
+
+Comment 🧃 to pre-order — Sunday pickup or local London delivery. Link in bio.
+
+#VitaPress #LondonSmallBusiness #ColdPressedJuice #SmallBusinessUK #LondonFood #BuildInPublic #FoodBusiness
+	15 May 2026, 6:28 am
+	[4918]<button />
+	[4919]<button />
+	[4920]<button />

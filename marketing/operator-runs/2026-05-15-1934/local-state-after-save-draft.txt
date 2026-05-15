@@ -1,0 +1,91 @@
+viewport: 1920x856
+page: 1920x856
+scroll: (0, 0)
+[2214]<div id=root />
+	[2215]<button />
+	[2217]<button />
+		Upload
+	Manage
+	[2221]<button />
+		Home
+	[2224]<button />
+		Posts
+	[2227]<button />
+		View analytics
+	[2230]<button />
+		Comments
+	Tools
+	[2233]<button />
+		Inspiration
+	[2236]<button />
+		Monetisation
+	[2204]<button />
+		Creator Academy
+	[2205]<button />
+		Unlimited Sounds
+	Others
+	[2244]<button />
+		Share feedback
+	[2569]<a />
+		Back to TikTok
+	[2250]<div />
+		[2593]<span />
+			[2594]<div />
+				Posts 6
+	[2251]<div />
+		[2596]<span />
+			[2597]<div />
+				Drafts 2
+	<svg /> <!-- SVG content collapsed -->
+	You can save up to 30 drafts. All drafts are only visible to you and accessible across computers. Drafts expire after 60 days and will be deleted permanently.
+	[2613]<span />
+		Drafts
+	Last update
+	[2619]<span />
+		Actions
+	[2252]<div />
+		[2633]<span />
+			00:14
+	vita-press-day9-batch-realityTikTok humbled this tiny juice launch, so tomorrow's content is getting built by comments instead of fake wellness hooks.
+
+
+
+Pick the next proof video:
+
+A = batch prep chaos
+
+B = taste test reactions
+
+C = ingredient shop receipt
+
+D = packing Sunday orders
+
+
+
+Comment A/B/C/D + your area if you want Sunday pickup or local London delivery. Link in bio to pre-order.
+
+
+
+#coldpressedjuice #londonsmallbusiness #smallbusinessuk #londonfood #juicetok #vitapress
+	15 May 2026, 7:37 pm
+	[2253]<button />
+	[2254]<button />
+	[2255]<button />
+	[2256]<div />
+		[2670]<span />
+			00:12
+	Replying to a fair comment…
+
+Fair pushback — this is exactly why we’re moving away from fake wellness claims and showing the real product instead.
+
+Vita Press is cold-pressed juice made from food ingredients. It is not medical advice, not a cure, and not a replacement for speaking to a professional if you have a health concern.
+
+£3.50 each · 3 for £10 · London launch batch.
+
+Comment 🧃 to pre-order — Sunday pickup or local London delivery. Link in bio.
+
+#VitaPress #LondonSmallBusiness #ColdPressedJuice #SmallBusinessUK #LondonFood #BuildInPublic #FoodBusiness
+	15 May 2026, 6:28 am
+	[2257]<button />
+	[2258]<button />
+	[2259]<button />
