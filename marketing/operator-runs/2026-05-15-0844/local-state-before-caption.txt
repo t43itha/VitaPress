@@ -1,0 +1,172 @@
+viewport: 1920x856
+page: 1920x856
+scroll: (0, 0)
+[1263]<div id=root />
+	[1265]<button />
+	[1267]<button disabled=true />
+		Upload
+	Manage
+	[1271]<button />
+		Home
+	[1274]<button />
+		Posts
+	[1277]<button />
+		View analytics
+	[1280]<button />
+		Comments
+	Tools
+	[1283]<button />
+		Inspiration
+	[1286]<button />
+		Monetisation
+	[1252]<button />
+		Creator Academy
+	[1253]<button />
+		Unlimited Sounds
+	Others
+	[1294]<button />
+		Share feedback
+	[1669]<a />
+		Back to TikTok
+	|scroll element|<div /> (0.7 pages above, 0.2 pages below)
+		[1300]<div />
+			vita-press-day8-price-poll.mp4
+			[1818]<div />
+				[1816]<div />
+					1080P
+			[2421]<span role=img />
+				[2411]<svg role=img /> <!-- SVG content collapsed -->
+			Uploaded（583.43KB）
+			[2423]<button aria-label=Replace />
+				Replace
+			Details
+			Description
+			[1853]<div />
+				[1833]<div aria-autocomplete=list contenteditable=true role=combobox expanded=false />
+					vita-press-day8-price-poll
+				[1839]<button aria-label=Hashtag id=web-creation-caption-hashtag-button />
+					Hashtags
+				[1843]<button aria-label=@mention id=web-creation-caption-mention-button />
+					Mention
+				[1846]<span />
+					26
+				[1848]<span />
+					4000
+			Cover
+			[1860]<div />
+				[1859]<span />
+					[1858]<span role=img />
+						[1857]<svg role=img /> <!-- SVG content collapsed -->
+			[1864]<div />
+				[2356]<img />
+				[1862]<div />
+					Edit cover
+			Location
+			[2395]<div />
+				[2394]<span />
+					[2393]<span role=img />
+						[2392]<svg role=img /> <!-- SVG content collapsed -->
+			[1877]<button role=combobox expanded=false />
+				|SHADOW(open)|[1871]<input role=input type=text placeholder=Search locations />
+			[2361]<div />
+				Bromley Common
+			[2362]<div />
+				Diva
+			[2363]<div />
+				McDonald's
+			[2364]<div />
+				Likkle 'd'
+			[2365]<div />
+				Taste of London
+			[2366]<div />
+				London Choice - Knightsbridge - Harrod's
+			[2367]<div />
+				Aldgate East
+			Settings
+			When to post
+			[1898]<label />
+				[1888]<span />
+					[1887]<span />
+				[1889]<span />
+					Now
+			[1899]<label />
+				[1892]<span />
+					[1891]<span />
+				[1893]<span />
+					Schedule
+			[1900]<div />
+				[1897]<span />
+					[1896]<span role=img />
+						[1895]<svg role=img /> <!-- SVG content collapsed -->
+			Who can see this post
+			[1910]<button role=combobox expanded=false />
+				Everyone
+			High-quality uploads
+			[1922]<div />
+				[1916]<span />
+					[1915]<span role=img />
+						[1914]<svg role=img /> <!-- SVG content collapsed -->
+			[1919]<div aria-checked=true data-state=checked />
+				[1917]<span data-state=checked />
+			HD by default when you post from Web Studio
+			[1987]<div />
+				[1984]<div />
+					[1982]<span />
+						Show more
+					[1983]<span role=img />
+						[1981]<svg role=img /> <!-- SVG content collapsed -->
+			Checks
+			Content check lite
+			[1997]<div />
+				[1991]<span />
+					[1990]<span role=img />
+						[1989]<svg role=img /> <!-- SVG content collapsed -->
+			[1994]<div aria-checked=true data-state=checked />
+				[1992]<span data-state=checked />
+			[2019]<div />
+				<svg /> <!-- SVG content collapsed -->
+			No issues found. However, your video could still be removed later if it violates our Community Guidelines.
+			[2044]<div />
+				Feed
+			[2045]<div />
+				Profile
+			[2046]<div />
+				Web
+			[2059]<button />
+			[2340]<div />
+				[2336]<span />
+					[2317]<div />
+						[2316]<div />
+				[2322]<div />
+					[2319]<svg /> <!-- SVG content collapsed -->
+				00:00:00
+				[2321]<span />
+				00:00:13
+				[2331]<div />
+					[2326]<svg /> <!-- SVG content collapsed -->
+				[2332]<div />
+					[2329]<svg /> <!-- SVG content collapsed -->
+			[2103]<div />
+				[2101]<img />
+				[2102]<img />
+			[2105]<div />
+			vita_press
+			vita-press-day8-price-poll
+			[2112]<div />
+				<svg /> <!-- SVG content collapsed -->
+			Original sound
+			vita_press
+			Original sound
+			vita_press
+			[2131]<button />
+				Edit
+			[2135]<button />
+				Sounds
+			[2139]<button />
+				Text
+			[2164]<button />
+				Post
+			[2165]<button />
+				Save draft
+			[2166]<button />
+				Discard
