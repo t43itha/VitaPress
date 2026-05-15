@@ -1,0 +1,60 @@
+viewport: 1512x770
+page: 1512x770
+scroll: (0, 0)
+[17]<div id=app />
+	[18]<a aria-label=Go to TikTok For You feed />
+		[182]<strong />
+			TikTok
+	[19]<a />
+		Feedback and help
+	|scroll element|<div id=loginContainer /> (0.0 pages above, 0.2 pages below)
+		Log in to TikTok
+		Manage your account, check notifications, comment on videos, and more.
+		[22]<div role=link />
+			[201]<div />
+				[202]<svg /> <!-- SVG content collapsed -->
+			[204]<div />
+				[205]<div />
+					Use QR code
+		[23]<div role=link />
+			[208]<div />
+				[209]<svg /> <!-- SVG content collapsed -->
+			[211]<div />
+				[212]<div />
+					Use phone / email / username
+		[24]<div role=link />
+			[215]<div />
+				[216]<svg /> <!-- SVG content collapsed -->
+			[219]<div />
+				[8]<div />
+					Continue with Facebook
+		[25]<div role=link />
+			[223]<div />
+				[224]<svg /> <!-- SVG content collapsed -->
+			[229]<div />
+				[230]<div />
+					Continue with Google
+		[26]<div role=link />
+			[234]<div />
+				[235]<svg /> <!-- SVG content collapsed -->
+			[237]<div />
+				[238]<div />
+					Continue with Apple
+	By continuing, you agree to TikTok’s
+	[27]<a />
+		Terms of Service
+	and confirm that you have read TikTok’s
+	[28]<a />
+		Privacy Policy
+	Don’t have an account?
+	[29]<a />
+		Sign up
+	[254]<div />
+		[255]<p />
+			[256]<span />
+				English (US)
+	2026
+	TikTok
+[32]<div id=floating-ui-0 />
+[33]<div id=floating-ui-1 />
+[34]<div id=floating-ui-2 />
