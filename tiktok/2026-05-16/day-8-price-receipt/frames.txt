@@ -1,0 +1,11 @@
+file '/private/tmp/VitaPress-operator/tiktok/2026-05-16/day-8-price-receipt/01.png'
+duration 1.8
+file '/private/tmp/VitaPress-operator/tiktok/2026-05-16/day-8-price-receipt/02.png'
+duration 1.8
+file '/private/tmp/VitaPress-operator/tiktok/2026-05-16/day-8-price-receipt/03.png'
+duration 1.8
+file '/private/tmp/VitaPress-operator/tiktok/2026-05-16/day-8-price-receipt/04.png'
+duration 1.8
+file '/private/tmp/VitaPress-operator/tiktok/2026-05-16/day-8-price-receipt/05.png'
+duration 1.8
+file '/private/tmp/VitaPress-operator/tiktok/2026-05-16/day-8-price-receipt/05.png'
